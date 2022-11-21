@@ -1,0 +1,98 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+
+/* page layout start  */
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top:  50px ;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+/* page layout end  */
+
+
+/* nav bar css  start  */
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ /* giving nav item custom width  */
+.grow-list{
+    width: 75%;
+}
+
+.list{
+    display: flex;
+    gap: 40px;
+    padding: 10px ;
+}
+
+.list>li {
+    list-style: none;
+    color: rgb(155, 155, 155);
+    font-size: 1.1rem;
+}
+.list-item:nth-child(1){
+    color: black;
+    font-weight: bold;
+    
+}
+
+/* nav bar css end  */
+
+
+/* buttons css start  */
+.nav-button{
+ background-color: #5955B3;
+ color: white ;
+ padding: 15px;
+ border-radius: 8px;
+ border: none;
+ font-size: 1.1em;
+ font-weight: bold;
+}
+
+.nav-button:hover{
+    background-color: white;
+    border: 1px solid #5955B3;
+    color: #5955B3;
+    font-weight: bold;
+}
+
+/* buttons css end   */
+
+/* banner css start  */
+
+.banner-container{
+    display: flex;
+    align-items: center;
+}
+
+.heading-text{
+    font-size: 4rem;
+    margin-bottom: 30px;
+    width: 400px ;
+}
+.heading-text span {
+    color: #5955B3;
+}
+.description{
+    width: 400px ;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: rgb(155, 155, 155);
+    
+
+}
+
+
+
