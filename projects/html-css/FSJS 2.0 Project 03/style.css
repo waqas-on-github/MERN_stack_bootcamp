@@ -1,0 +1,159 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Orbitron;
+    box-sizing: border-box;
+
+}
+.container{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* navbar css  */
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.list{
+    display: flex;
+    gap: 90px;
+}
+.list-item{
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-weight: 800;
+}
+.list-item:nth-child(1){
+    border-bottom: 4px solid black;
+    /* border: 1px solid red ; */
+    /* width: 50px; */
+    padding: 5px;
+    text-align: center;
+
+}
+
+/* nav bar css end  */
+
+/* buttons */
+.button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px ;
+}
+.nav-button {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 50px ;
+    font-size: 1.3rem;
+    border-radius: 15px ;
+    border-color: #000000;
+}
+
+/* buttons css end  */
+
+/* hero section  */
+
+.hero-container{
+    color:black;
+}
+
+.hero-container-right{
+    position: absolute;
+    top: 300px;
+    left: 850px;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px ;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-heading{
+    font-size: 4.6rem;
+    width: 1000px ;
+}
+
+.hero-description{
+    width: 75%;
+    font-size: 1.1rem;
+    font-family:   sans-serif;
+    color: rgb(89, 89, 89);
+}
+
+.button-email{
+    color: black;
+    background-color: white;
+    padding: 5px 30px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.button-join{
+    margin-left: 20px;
+    padding: 3px 6px ;
+    background-color: #000000;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius:15px;
+}
+.contact-heading{
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+/* positioning work  */
+
+img[alt="person-hero-iamge"]{
+    position: relative;
+    bottom: 400px;
+} 
+
+ .square{
+    position: relative;
+    left: 200px;
+    top: 360px; 
+} 
+
+
+.star:nth-child(2){
+   position: relative;
+   left: 290px;
+   top: 330px;
+
+}
+.star:nth-child(1){
+   position:relative; 
+   left: -900px;
+
+}
+
+
+.globe{
+    position: relative;
+    left: 350px ;
+    bottom: 300px;
+} 
+
+
+
+
+
