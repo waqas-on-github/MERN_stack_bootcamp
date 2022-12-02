@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "javascript_bootcamp"
+    "liveServer.settings.multiRootWorkspaceName": "javascript_bootcamp",
+    "liveServer.settings.port": 5501
 }
