@@ -4,9 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple</title>
+    <title>Document</title>
 </head>
 <body>
     
+
+<div id="progress-container">
+    <!-- The progress bar itself -->
+    <div id="progress-bar"></div>
+  </div>
+  
+  <!-- CSS to style the progress bar -->
+  <style>
+    #progress-container {
+      width: 400px;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    #progress-bar {
+      width: 0%;
+      height: 100%;
+      background-color: #0f0;
+      border-radius: 5px;
+    }
+  </style>
+  
+  <!-- JavaScript to control the progress bar -->
+  <script>
+    // Get references to the progress bar container and progress bar elements
+    var container = document.getElementById('progress-container');
+    var progressBar = document.getElementById('progress-bar');
+    
+    // Flag to track whether the mouse is down
+    var isMouseDown = false;
+    
+    // Listen for mouse events on the container element
+    container.addEventListener('mousedown', function(event) {
+      isMouseDown = true;
+      updateProgress(event);
+    });
+    
+    container.addEventListener('mousemove', function(event) {
+      if (isMouseDown) {
+        updateProgress(event);
+      }
+    });
+    
+    container.addEventListener('mouseup', function() {
+      isMouseDown = false;
+    });
+    
+    // Function to update the progress bar
+    function updateProgress(event) {
+      var rect = container.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var width = container.offsetWidth;
+      var progress = x / width;
+      progressBar.style.width = (progress * 100) + '%';
+    }
+  </script>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the carousel container and slides */
+    .carousel-container {
+      width: 500px;
+      height: 300px;
+      position: relative;
+    }
+    .carousel-slide {
+      width: 500px;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /* hide all slides except the first one */
+    .carousel-slide:not(:first-child) {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel-slide">Slide 1</div>
+    <div class="carousel-slide">Slide 2</div>
+    <div class="carousel-slide">Slide 3</div>
+  </div>
+  <script>
+    // JavaScript code for the carousel functionality
+    var slideIndex = 0; // current slide index
+
+    // show the next slide
+    function nextSlide() {
+      // hide the current slide
+      var slides = document.querySelectorAll('.carousel-slide');
+      slides[slideIndex].style.display = 'none';
+
+      // move to the next slide
+      slideIndex = (slideIndex + 1) % slides.length;
+
+      // show the next slide
+      slides[slideIndex].style.display = 'block';
+    }
+
+    // show the previous slide
+    function prevSlide() {
+      // hide the current slide
+      var slides = document.querySelectorAll('.carousel-slide');
+      slides[slideIndex].style.display = 'none';
+
+      // move to the previous slide
+      slideIndex = (slideIndex + slides.length - 1) % slides.length;
+
+      // show the previous slide
+      slides[slideIndex].style.display = 'block';
+    }
+
+    // automatically rotate the slides every 2 seconds
+    setInterval(nextSlide, 2000);
+  </script>
 </body>
 </html>
+
+</body>
+</html><!-- The container for the progress bar -->
