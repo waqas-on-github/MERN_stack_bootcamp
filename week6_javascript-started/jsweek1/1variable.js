@@ -1,1 +1,6 @@
-let name ='waqas';
+
+var name ="waqas"
+let name ='waqas'
+const name ='waqas'
+
+
