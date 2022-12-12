@@ -1,3 +1,6 @@
+
+console.log("conversion code starts here ")
+
 // convert a string to a number
 let str = "5";
 let num = Number(str);
@@ -12,3 +15,4 @@ console.log(typeof str); // Output: "string"
  num = 0;
  bool = Boolean(num);
 console.log(typeof bool); // Output: "boolean"
+console.log("conversion code ends  here ")

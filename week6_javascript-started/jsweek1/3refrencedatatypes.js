@@ -1,5 +1,6 @@
 
 // When you create a new object or array in JavaScript, the data structure is stored on the heap and a reference to it is stored on the stack. This means that when you access the object or array, you are actually accessing the reference on the stack, which points to the data on the heap.
+console.log( 'ref daatatypes code starts here' )
 
 let arr =[1,2,3,4,5]
 
@@ -39,3 +40,5 @@ numbers.push(4);
 let lastNumber = numbers[3];
 
 // The reference on the stack is used to find the updated data on the heap
+
+console.log( 'ref daatatypes code end here' )

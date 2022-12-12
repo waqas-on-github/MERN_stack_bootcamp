@@ -1,5 +1,5 @@
-// Premittive data types 
-
+// Premittive data types
+console.log( 'permitive daatatypes code starts here' )
 //  Number 
 let num =22
 console.log(typeof(num))
@@ -23,4 +23,5 @@ let age =null
 let r;
 console.log(typeof(r))
 
+console.log( 'permitive daatatypes code ends here' )
     

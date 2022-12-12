@@ -8,5 +8,5 @@ console.log(Math.ceil(num))
 console.log(Math.min(num))
 console.log(Math.max(num))
 // imp
-console.log(Math.round(Math.random()* 10))
+console.log(Math.round(Math.random() * 10))
 console.log('math code end here ')
