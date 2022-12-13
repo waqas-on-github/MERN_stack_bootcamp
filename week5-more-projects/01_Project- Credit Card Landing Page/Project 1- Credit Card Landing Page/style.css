@@ -1,0 +1,342 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0 ;
+}
+
+.hero{
+   background-color: #181818;
+   color: #ffffff;
+   font-family: 'lato';
+   padding-top: 20px;
+   /* border: 1px solid  red ; */
+}
+
+.middle-items ul li a {
+    text-decoration: none;
+    color: white;
+}
+.middle-items ul li{
+   list-style: none;
+}
+
+/* nav bar css  */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 440px;
+}
+
+.middle-items ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 90px;
+}
+.side-items{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
+
+/* navbar css  */
+
+/* hero css  */
+
+
+/* 1st heading css  */
+.heading{
+   font-size: 6rem ;
+   width: 1100px;
+}
+.main h1 span{
+   color: #F637EC;
+}
+
+/* 1st heading css  */
+
+/* paragraph css  */
+.main-side1 p{
+   color: #7D7D7D;
+   font-size: 1.2rem;
+   width: 500px;
+}
+/* paragraph css  */
+/* arrow css  */
+.arrow{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start ;
+   gap: 20px;
+}
+/* arrow css  */
+
+ /* history css  */
+.exp-sec{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 20px;
+   
+}
+
+.sec1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.sec2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.sec1 h3{
+   width: 130px;
+}
+.sec1 h3 span {
+   margin-left: 30px;
+}
+
+.sec2 h3{
+   width: 130px;
+}
+.sec2 h3 span {
+   margin-left: 30px;
+}
+
+.sec1 h1{
+   font-size: 3rem;
+}
+.sec2 h1{
+   font-size: 3rem;
+}
+
+ /* history css  */
+
+/* hero section  strcture  */
+
+.main-side1{
+   margin-left: 130px;
+   margin-top: 80px;
+   gap: 80px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-self: flex-start;
+  
+  
+}
+/* hero section  strcture  */
+
+
+/* image positioning  */
+
+.main{
+   height: 80vh;
+}
+.first-image {
+   position: relative;
+   bottom: 1400px ;
+   right: -780px;
+}
+
+.second-image {
+   position: relative;
+   top: -770px;
+   right: -440px;
+   z-index: 1;
+}
+
+/* image positioning  */
+
+
+.show-case{
+   background-color: #292929;
+  padding: 80px ;
+  display: flex;
+  justify-content: center;
+  gap: 50px ;
+}
+
+
+
+/* payment section */
+.pay-sec{
+   padding: 10%;   
+}
+.sec-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    gap: 400px;   
+}
+
+
+.Payment span{
+    color: #F637EC;
+}
+.Payment h1{
+   font-size: 4rem;
+   width: 100%;
+}
+.disp p {
+   width:70% ;
+   padding: 20px ;
+   line-height: 30px;
+   font-size: 1.1rem;
+   color: #7D7D7D ;
+
+}
+
+
+/* payment section  */
+
+
+
+/* card sec  */
+.card-sec{
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   padding: 100px;
+   gap: 100px;
+}
+.card {
+   width: 20%;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   border: 1px solid rgb(104, 104, 104);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.card2 h2{
+   text-align: center;
+}
+.card2{
+   padding-top: 70px;
+   padding-bottom: 70px;
+   position: relative;
+   bottom: 30px;
+   background-color: #494949;
+}
+
+/* card sec  */
+   /* choise sec */
+.choics{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 100px;
+   padding: 100px;
+   padding-bottom: 0px;
+   background: #FCEFFB;
+   height: 130vh;
+}
+
+
+.choics  h1{
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+.choics  h1 span{
+    color: #F637EC;
+}
+
+.choics  p {
+   text-align: center;
+   font-size: 1.4rem;
+   color: #494949 ;
+}
+
+.bc-image img {
+      position: relative;
+      bottom: 150px;
+}
+
+   /* choise sec */
+.rating-sec{
+   padding-top:100px;
+   padding-bottom:100px;
+   color: white;
+   background-color: #181818;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 80px;
+}
+.rating-sec h1 {
+   font-size: 4rem;
+}
+.rating-sec h1 span {
+ color: #F637EC;
+}
+.rating-sec p{
+   font-size: 1.3rem;
+   color: #b4b4b4;
+   text-align: center;
+}
+
+/* rating cards  */
+
+
+
+
+
+  
+   
+.rating-card-sec {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+
+}
+
+
+.rating-card  {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 25vw;
+   border: 1px solid white    ;
+   gap: 20px;
+   justify-content: baseline;
+   padding-left: 20px;
+   padding: 30px;
+   background-color: #151515;
+   
+     
+
+}
+.rating-card p {
+   font-size: 1rem;
+   text-align: justify;
+} 
+
+.pair1{
+   display: flex;
+   gap: 30px
+}
+.pair2{
+   display: flex;
+   gap: 30px;
+}
+
+.rating-card1{
+background: rgb(92,89,89);
+background: linear-gradient(90deg, rgba(92,89,89,0.6839110644257703) 35%, rgba(128, 128, 128, 0.942) 100%);
+
+}
+
+
