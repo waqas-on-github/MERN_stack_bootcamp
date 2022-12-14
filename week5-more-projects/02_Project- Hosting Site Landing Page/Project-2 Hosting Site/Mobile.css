@@ -1,0 +1,113 @@
+@media (min-width: 321px) and (max-width: 700px) {
+    /* Styles for small screens go here */
+   nav {
+    flex-direction: column;
+    gap: 20px;
+   }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 1rem;
+       }
+
+    .hero {
+        padding: 30px ;
+        gap: 50px;
+        
+
+    }
+   
+    .right-hero h1{
+        font-size: 2.5rem;
+        letter-spacing: 5px ;
+         line-height: 50px;
+        padding-left: 10px;
+       
+       
+    }
+   
+    .right-hero{
+         display: flex;
+        align-items: flex-start; 
+        justify-content: flex-start;
+        flex-direction: column;
+        
+
+    }
+
+    
+    .right-hero p {
+        color: var(--text-light);
+        font-size: 1rem   ;
+        line-height: 1.1rem;
+        letter-spacing: 2px ;
+        text-align: left;
+        display: flex;
+
+        
+    }
+    .right-hero br {
+        display: none;
+    }
+
+    .left-hero {
+        width: 80%;
+    }
+    .left-hero img {
+        width: 100%;
+    }
+
+
+     /* logo sec */
+.logo-sec  {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--black-lite);
+    gap: 30px ;
+
+}
+.logo-sec  img {
+    width: 60px;
+    background-color: var(--black-lite);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
