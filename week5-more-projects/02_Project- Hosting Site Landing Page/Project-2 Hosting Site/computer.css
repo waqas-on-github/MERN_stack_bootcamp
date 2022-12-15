@@ -475,11 +475,83 @@ nav button{
 
 
 /* footer */
+footer {
+    padding: 100px 0px ;
+    background-color: #111010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.f-child {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.f-heading h1 {
+    color: white;
+}
+
+.forum form {
+    padding: 50px 25px;
+    background-color: #212020;
+    display: flex;
+    gap: 20px ;
+    border-radius: 20px;
+}
+
+.forum form input {
+    background-color: #3E3D3D;
+    padding: 15px 30px ;
+    border: none;
+    border-radius: 20px ;
+    color: white;
+
+}
+.forum form input:focus {
+    outline: none;
+}
+.forum form input:last-child{
+    background-color: #0C8BFD;
+    color: white;
+}
 
 
+.m-menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--full-white);
+}
+.line-ft{
+    color: white;
+    width: 50%;
+    height: 1px;
+}
 
+.row p:not(:nth-child(1))  {
+    font-size:15px;
+    
+}
 
+.row  {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-
-
-
+.tb{
+    display: flex;
+    gap: 150px;
+    padding: 100px 0px ;
+}
