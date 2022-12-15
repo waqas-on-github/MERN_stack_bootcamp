@@ -184,7 +184,13 @@ nav button{
 
 }
 
-
+.features {
+    display: flex;
+    gap: 120px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
 .r-card {
  display: flex;
  flex-direction: column ;
@@ -214,62 +220,261 @@ nav button{
 
 
 
+.l-card {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    justify-content: center;
+    /* padding-top: 100px; */
+    padding: 20px;
+    gap: 15px;
+    border-radius: 30px;
+    
+}
+
+.l-card>div {
+    padding: 13px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;              
+    background-color: var(--grey-lite);
+    border-radius: 20px ;
+    width: 340px;
+}
+
+.l-card div p {
+    color: #FFFFFF;
+    font-size: 15px;
+} 
+
+.big-dot{
+    width: 15px ;
+    height: 15px;
+    background-color: #dad6d6;
+    border-radius: 50%;
+}
+
+.f-sec {
+   display: flex;
+   align-items:center;
+   justify-content: flex-end;
+   flex-direction: column;
+   gap: 40px;
+    
+
+}
+
+.f-sec h1 {
+    font-size: 3rem;
+    text-align:justify;
+    padding-right: 90px;
+
+}
+
+/* payment section */
+.pay-sec{
+    background-color: #111010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    gap: 90px ;
+    padding-top: 100px;
+}
+
+.arrows {
+    display: flex;
+    gap: 140px ;
+
+}
+.arrows h1 {
+    font-size: 3rem ;
+    color: #FFFFFF  ;
+}
+.paycards{
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     padding-bottom: 100px;
+   
+}
+.paycard1 ,.paycard2 ,.paycard3 {
+    /* border: 1px solid red ; */
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px ;
+    border-radius: 20px;
+
+}
+.paycard2{
+    background-color: #0C8BFD;
+    color: #FFFFFF;
+}
+.top-info p {
+    font-size: 14px;
+}
+
+.top-info{
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+   box-shadow: 0px 0.5px 0.5px 0px rgb(201, 201, 201);
+}
+.top-info h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.top-info h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.top-info span {
+    font-size: 1.3rem;
+    color: #646262;
+}
+.bottom-info {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.bottom-info .div{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.bottom-info .div  p {
+    font-size: 1.2rem;
+}
+
+
+.pay-sec button{
+    padding:  15px 90px;
+    border: none;
+    border-radius: 20px ;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600    ;
+    background-color: var(--blue-lite);
+}
+.pay-sec .btn2 {
+    background-color: #FFFFFF;
+    color: var(--blue-lite);
+}
+
+  /* rating cards  */
+  .rating-sec {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+  .top-para {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 200px;
+    width: 1000px;
+}
+.top-para h1 {
+    font-size: 3rem;
+}
+
+.top-para p {
+    font-size: 15px;
+    color: #646262;
+}
+
+.raiting-card{
+    display: flex;
+    gap: 40px;
+}
+.l-r-cards {
+    color: white;
+     background-color: #000000;
+     padding: 20px 30px;
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+     flex-direction: column;
+     justify-content: flex-start;
+     border-radius: 40px;     
+}
+.l-l-cards {
+
+     padding: 20px 30px;
+     display: flex;
+     align-items: flex-start;
+     gap: 30px;
+     flex-direction: column;
+     justify-content: flex-start;
+     border-radius: 40px;   
+     border-top-right-radius:0px;
+     border-bottom-right-radius:0px;
+     border: 0.2px solid rgb(185, 185, 185) ;  
+     border-right: none;
+}
+
+.l-l-cards h3{
+    font-size: 15px;
+    
+}
+
+.l-l-cards h4 {
+    font-size: 13px;
+    font-weight: lighter;
+}
+ 
+.l-r-cards p  { 
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-style: italic;
+}
+.l-l-cards p  { 
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.line2 {
+    background-color: #0C7FE6;
+    border: none ;
+    outline: none ;
+    border-radius: 3px;
+    position: relative;
+    top: -8px;
+    bottom: 10px   ;
+}
+
+.line {
+    background-color: #f3f3f3;
+    border: none ;
+    outline: none ;
+    border-radius: 3px;
+}
+.line-sec{
+    width: 50%;    
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* footer */
 
 
 
