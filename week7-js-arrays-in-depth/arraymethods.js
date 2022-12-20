@@ -8,6 +8,24 @@ arr4 =[...arr3 ,"hello"]         // es6 method   // do not mutate orignal array
 console.log(arr1)
 console.log(arr2)
 console.log(arr3)
-
 console.log(arr4)
+
+// 1 Array.prototype.at()
+
+console.log(arr1(arr1.length-1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
