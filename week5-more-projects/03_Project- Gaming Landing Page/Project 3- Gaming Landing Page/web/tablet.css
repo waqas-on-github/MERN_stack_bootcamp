@@ -1,0 +1,9 @@
+
+@media (min-width: 713px) and (max-width:768px) {
+
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

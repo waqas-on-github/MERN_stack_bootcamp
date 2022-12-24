@@ -1,0 +1,26 @@
+
+@media (max-width: 425px)  and (min-width: 320px){
+
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+.right-sec{
+    display: flex   ;
+    flex-direction: column;
+     gap: 15px;
+     border: none;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+ul {
+    gap: 30px;
+}
+    
+
+}
