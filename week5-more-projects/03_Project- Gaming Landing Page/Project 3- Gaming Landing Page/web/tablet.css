@@ -1,9 +1,50 @@
 
 @media (min-width: 713px) and (max-width:768px) {
-
+/* nav css  */
     nav{
         flex-direction: column;
         gap: 20px;
     }
+
+
+    /* nav css  */
+main {
+    gap: 50px;
+}
+
+/* hero css  */
+.hero {
+              
+     flex-direction: column;
+     align-items: center;
+     gap: 50px;
+     justify-content: center;
+              
+    }
+
+    /* hero css  */
+    
+ .hero-left {
+    width: 500px;
+    display: flex;
+    align-items: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

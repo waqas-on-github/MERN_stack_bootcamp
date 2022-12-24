@@ -2,12 +2,11 @@
 @media (max-width: 425px)  and (min-width: 320px){
 
 
+    /* nav bar css  */
     nav {
         flex-direction: column;
         gap: 20px;
     }
-
-
 
 .right-sec{
     display: flex   ;
@@ -21,6 +20,71 @@
 ul {
     gap: 30px;
 }
+    /* nav bar css  */
+
+
+
+    main {
+        gap: 30px;
+    }
     
+    /* hero css  */
+    .hero {          
+         flex-direction: column;
+         align-items: center;
+         gap: 50px;
+         justify-content: center;
+                  
+        }
+    
+        /* hero css  */
+    .hero-right {
+        justify-content: center;
+        align-items: center;
+    }
+     .hero-left {
+        width: 300px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+     }
+    
+
+     .hero-right h1{
+        font-size: 1.8rem;
+    }
+    .hero-right p {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
