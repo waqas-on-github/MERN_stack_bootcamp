@@ -7,5 +7,10 @@ main {
 
 
 
+.war-game{
+    justify-content: center;
+    gap: 30px;
+}
+
 
 }

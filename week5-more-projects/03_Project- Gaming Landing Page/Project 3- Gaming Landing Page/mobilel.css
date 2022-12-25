@@ -73,18 +73,60 @@ ul {
 
 
 
+    .war-game{
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .war-disp h1{
+        font-size: 1.8rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+   .war-disp p {
+     font-size: 11px;
+     text-align:justify;
+     width: 90%;
+} 
+
+    .war-disp{
+      
+        gap: 20px;
+        align-items: center;
+        width: 80%;
+       
+    }
 
 
 
+    .war-img img {
+        width: 340px ;
+        height: 400px;
+    }
 
 
 
-
-
-
-
-
-
+    .war-btn {
+        display: flex;
+        gap: 10px;
+    }
+    .w-btn1 {
+         border: none ;
+        padding: 5px 15px;
+        color: white;
+        background-color: #F4694C;
+    }
+    
+    .w-btn2 {
+        border: none ;
+       padding: 5px 15px;
+       border: 1px solid #F4694C;
+       
+    }
 
 
 
