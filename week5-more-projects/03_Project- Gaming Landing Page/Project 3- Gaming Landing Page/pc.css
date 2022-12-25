@@ -3,6 +3,23 @@
     padding: 0;
      margin: 0;}
 
+
+     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 150px;
+     }
+
+.mid-sec-align {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+}     
 main{
     background:url(./Assets/Photos/futuristic-bg.png) ;
     background-position:center;
@@ -75,7 +92,8 @@ ul li a {
     display: flex;
     justify-content: center;
     gap: 30%;
-    padding-top: 200px;
+
+
     flex-wrap: wrap;
 
 }
@@ -119,6 +137,7 @@ ul li a {
     font-size: 1.1rem;
     border: none;
 
+
 }
 
 
@@ -127,7 +146,7 @@ ul li a {
 
 
 .show-sec{
-    padding: 100px 0px;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,6 +214,7 @@ ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 
@@ -216,12 +236,12 @@ ul li a {
 
 
 .war-game {
-    padding: 100px 230px;
+    
     display: flex   ;
-    justify-content:flex-start ;
+    justify-content:space-around ;
     align-items: center;
-    gap: 10%;
     flex-wrap: wrap;
+    gap: 420px;
 }
 /* war img sec */
 
@@ -284,46 +304,142 @@ ul li a {
 }
  
 .rec-sec {
-        border:  1px solid red ;
     display:  flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
-
-
+    width: 100%;
+    gap: 100px;
+   
+    
 }
 .top-sec     {
-    display: flex;
-     width: 900px;
+     display: flex;
      justify-content: space-between;
-     align-items: center;
+     align-items: center; 
+      width: 90%;
+      flex-wrap: wrap;
 }
 
 .top-sec h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 .card-sec {
-    border:  1px solid red ;
     display:  flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40%;
+    width: 100%;
+    
 }
 
 /* rec section */
 .rec1,.rec2,.rec3,.rec4 {
-    width: 450px; 
-    height:225px;
-    /* border:  2px solid red; */
+    width: 430px; 
+    height:250px;
     display: flex;
+    display: flex;
+    gap: 50px;
+    
 
 }
 
 .rec1 img ,.rec2 img,.rec3 img  ,.rec4 img {
-    width: 30%;
-    height: 80%;
+    width: 200px;
+    height: 200px;
 }
 
 /* rec section */
+
+
+.top-sec1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top-sec2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.rec-disp1,.rec-disp2,.rec-disp3,.rec-disp4 p{
+    font-size: 12px ;
+    text-align: justify;
+
+}
+.rec-disp1,.rec-disp2,.rec-disp3,.rec-disp4{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px   ;
+    width: 300px;
+}
+.p1 {
+    color: #F4694C;
+}
+.download {
+    padding: 10px;
+    background-color: #F4694C;
+    border: none;
+    color: white;
+}
+
+
+.last-sec {
+    width: 100%;
+    background-color: #010308;
+}
+
+.image-tilted{
+    
+}
+
+
+.gamer-sec {
+
+    background:url(./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg);
+      width: 100vw;
+      height: 80vh;
+     background-repeat: no-repeat;
+     background-position: center right;
+     color: white;
+     border: 1px solid red;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
