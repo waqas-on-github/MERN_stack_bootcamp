@@ -4,7 +4,7 @@
      margin: 0;}
 
 main{
-    background:url(../Assets/Photos/futuristic-bg.png) ;
+    background:url(./Assets/Photos/futuristic-bg.png) ;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,26 +19,26 @@ main{
 
 /* nav bar css  */
 nav{
-    padding-top: 30px;
-    display: flex;
+  padding-top: 30px;
+   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 
 
 }
 
 .right-sec{
     display: flex   ;
-    /* width: 70%; */
     justify-content: space-around;
      gap: 500px;
      align-items: center;
+     flex-wrap: wrap;
 }
 
 ul{
     display: flex   ;
-    gap: 50px;
-
+    gap: 50px; 
 }
 ul li a {
     text-decoration: none;
@@ -47,10 +47,9 @@ ul li a {
 
 .nav-btn{
    display: flex;
-   gap: 10px;
+     flex-wrap: wrap;
+     gap: 10px;
 }
-
-
 
 .btn1 ,.btn2{
     padding: 10px 15px;
@@ -68,7 +67,6 @@ ul li a {
     font-weight: 600;
 }
 
-
 /* nav bar css  */
 
 /* hero css  */
@@ -76,32 +74,31 @@ ul li a {
     color: white ;
     display: flex;
     justify-content: center;
-    gap: 40%;
-}
+    gap: 30%;
+    padding-top: 200px;
+    flex-wrap: wrap;
 
+}
 
 .hero-right  {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    flex-wrap: wrap;
+
 }
 .hero-right h1{
     font-size: 4rem;
 }
 
-
-
 .hero-left {
     display: flex;
     flex-direction: column;
-    gap: 140px;
+    gap: 40px;
+    flex-wrap: wrap;
+
+
 }
-
-
-
-
-
-
 
 .hero-btn {
     display: flex;
@@ -126,54 +123,146 @@ ul li a {
 
 
 
+/* cards section */
+
+
+.show-sec{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+}
+.cards {
+    
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card1{
+    background-image: url(./Assets/Photos/image-2.png); 
+}
+.card2{
+    background-image: url(./Assets/Photos/image-4.png);
+}
+.card3{
+    background-image: url(./Assets/Photos/image-3.png);  
+}
+.card4{
+    background-image: url(./Assets/Photos/Rectangle\ 56.png);
+}
+
+
+
+.disp{
+   position: relative;
+   top: 78%;
+   bottom: 10px;
+   background-color: rgba(240, 248, 255, 0.26);
+   backdrop-filter: blur(10px);
+   padding: 10px 10px;
+   gap: 5px;
+
+}
+.disp h2{
+    font-size: 17px;
+}
+
+.disp p{
+    font-size: 15px;
+
+}
+
+.mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #F4694C;
+    border: none;
+}
+
+/* war img sec */
+
+.war-img img {
+    width: 500px;
+    height: 400px;
+}
 
 
 
 
-    /* styles for screens with width between 480 and 640 pixels go here */
+.war-game {
+    padding: 100px 230px;
+    display: flex   ;
+    justify-content:flex-start ;
+    align-items: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+/* war img sec */
+
+
+.war-disp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+   
+}
+
+.war-disp h1{
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+.war-disp p {
+    text-align: justify;
+    font-size: 13px;
+}
 
 
 
+.war-btn {
+    display: flex;
+    gap: 10px;
+}
+.w-btn1 {
+     border: none ;
+    padding: 15px 30px;
+    color: white;
+    background-color: #F4694C;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* styles for screens with width between 480 and 640 pixels go here */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.w-btn2 {
+    border: none ;
+   padding: 15px 30px;
+   border: 1px solid #F4694C;
+   background-color: white;
+   color: #F4694C;
+   
+}

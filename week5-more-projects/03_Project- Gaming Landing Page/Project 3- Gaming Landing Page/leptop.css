@@ -2,16 +2,18 @@
 @media (min-width: 713px) and (max-width:1024px) {
 
     /* nav css  */
-    .right-sec{       
+.right-sec{       
          gap: 100px; 
 }
 /* nav css */
 main{
-    gap: 150px;
+    gap: 150px;  
+    height: 100vh;
 }
 /* hero css  */
 .hero {
-    gap: 20%;
+    gap: 10%;
+    padding-top: 10px;
 }
 
 .hero-right h1{
@@ -20,14 +22,17 @@ main{
 
 
 .hero-left {
-    gap: 40px;
+    gap: 4px;
     font-size: 1rem;
 
 }
 
 
 
-
+.heading{
+    font-size: 2rem;
+    text-align: center;
+}
 
 
 

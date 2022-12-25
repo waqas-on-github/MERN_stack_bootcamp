@@ -7,7 +7,9 @@
         flex-direction: column;
         gap: 20px;
     }
-
+main{
+    height: 120vh;
+}
 .right-sec{
     display: flex   ;
     flex-direction: column;
@@ -34,6 +36,7 @@ ul {
          align-items: center;
          gap: 50px;
          justify-content: center;
+         padding-top:10px ;
                   
         }
     
@@ -62,7 +65,11 @@ ul {
 
 
 
-
+    .heading{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
 
 
 
