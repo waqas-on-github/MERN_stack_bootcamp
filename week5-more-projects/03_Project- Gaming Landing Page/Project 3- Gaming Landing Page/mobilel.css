@@ -149,7 +149,6 @@ ul {
        height: 30px;
     }
    .card-sec {
-    border: 1px solid red ;
      justify-content: center;
      align-items: center;
      
@@ -174,7 +173,6 @@ ul {
     .top-sec1 ,.top-sec2 {
         align-items: center;
         justify-content: center;
-        border: 1px solid red;
     }
 
     .rec-disp1,.rec-disp2,.rec-disp3,.rec-disp4 p{
@@ -198,6 +196,57 @@ ul {
 
 
 
+.heading{
+    font-size: 2rem;
+    text-align: center;
+}
 
 
+
+
+
+.image-sec-images img:nth-child(1) {
+    position: static;
+    height: 200px;
+    width: 200px;
+
+    
+  
+ }
+ .image-sec-images img:nth-child(2) {
+    position: static;
+      height: 200px;
+      width: 200px;
+   
+ }
+ .image-sec-images img:nth-child(3) {
+    position: static;
+     height: 200px;   
+     width: 200px;
+
+ }
+
+ .image-tilted h1 {
+    
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.image-tilted {
+    height:130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tp {
+    font-size: 12px;
+    text-align: center;
+}
+
+.image-sec-images {
+    flex-direction: column;
+}
 }

@@ -33,7 +33,6 @@ main {
 
 
  .war-game{
-    border: 1px solid red ;
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -43,6 +42,48 @@ main {
 
 
 
+
+
+
+
+.heading{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+.image-sec-images img:nth-child(1) {
+    position: relative;
+  
+   left: 20px;
+    
+  
+ }
+ .image-sec-images img:nth-child(2) {
+    position: relative;
+    left: 20px;
+   
+ }
+ .image-sec-images img:nth-child(3) {
+    position: relative;
+     left: 10px;
+     width: 180px;
+ }
+
+ .image-tilted h1 {
+    
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.image-tilted {
+    height:100vh;
+
+}
 
 
 

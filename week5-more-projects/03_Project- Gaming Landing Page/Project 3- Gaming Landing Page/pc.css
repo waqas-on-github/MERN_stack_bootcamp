@@ -44,13 +44,22 @@ nav{
 
 
 }
+.hl-dilog img:nth-child(1){
+    position: relative;
+    right: 50px;
+}
 
+.hl-dilog img:nth-child(3){
+    position: relative;
+    left: 150px;
+}
 .right-sec{
     display: flex   ;
     justify-content: space-around;
      gap: 500px;
      align-items: center;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
+
 }
 
 ul{
@@ -92,7 +101,7 @@ ul li a {
     display: flex;
     justify-content: center;
     gap: 30%;
-
+   padding-top: 200px;
 
     flex-wrap: wrap;
 
@@ -341,36 +350,23 @@ ul li a {
     display: flex;
     display: flex;
     gap: 50px;
-    
-
 }
-
 .rec1 img ,.rec2 img,.rec3 img  ,.rec4 img {
     width: 200px;
     height: 200px;
 }
-
 /* rec section */
-
-
 .top-sec1 {
     display: flex;
     flex-direction: column;
 }
-
-
 .top-sec2 {
     display: flex;
     flex-direction: column;
 }
-
-
-
-
 .rec-disp1,.rec-disp2,.rec-disp3,.rec-disp4 p{
     font-size: 12px ;
     text-align: justify;
-
 }
 .rec-disp1,.rec-disp2,.rec-disp3,.rec-disp4{
     display: flex;
@@ -390,23 +386,16 @@ ul li a {
     color: white;
 }
 
-
 .last-sec {
     width: 100%;
     background-color: #010308;
 }
-
-.image-tilted{
-    
-}
-
-
 .image-tilted {
      background:url(./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg);
      width: 100vw;
-     height: 70vh;
+     height: 80vh;
      background-repeat: no-repeat;
-     background-position: center right;
+     background-position: 58% 47%;
      color: white;
      display: flex;
      justify-content: center;
@@ -414,6 +403,12 @@ ul li a {
      flex-direction: column;
      gap: 50px;
 
+}
+
+.image-tilted h1 {
+    
+    font-size: 4rem;
+    text-align: center;
 }
 
 .image-sec-showcase {
@@ -424,8 +419,6 @@ ul li a {
     gap: 50px;
 }
 
-
-
 .image-sec-images
  {
     display: flex;
@@ -434,6 +427,30 @@ ul li a {
     gap: 50px;
  }
 
+ .image-sec-images img:nth-child(1) {
+    position: relative;
+    right: 250px;
+    bottom: 100px;
+    height: 400px;
+ }
+ .image-sec-images img:nth-child(2) {
+    position: relative;
+    right: 250px;
+    height: 350px;
+    bottom: -10px;
+   
+ }
+ .image-sec-images img:nth-child(3) {
+    position: relative;
+    right: 250px;
+    width: 200px;
+ }
+
+ .image-tilted h1 {
+    
+    font-size: 3rem;
+    text-align: center;
+}
 
 
 
@@ -484,11 +501,82 @@ ul li a {
 
 
 
+/* footer sec css  */
+footer{
+    padding: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.info-sec{
+    color: white ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+}
+
+.info-sec p {
+    line-height: 25px;
+}
+.social {
+    display: flex;
+    gap: 15px;
+}
 
 
+.articls-sec {
+    color: white;
+    display: flex;
+      flex-direction: column;
+      
+      gap: 20px;
+
+}
 
 
+.articls-dsp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 
+.leagus {
+    color: white;
+    display: flex;
+      flex-direction: column;
+      
+      gap: 20px;
+}
+
+.leagus-disp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 
+.team{
+    color: white;
+    display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+.team-disp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.get-in-touch{
+    color: white;
+    display: flex;
+      flex-direction: column;
+      gap: 20px;
+}

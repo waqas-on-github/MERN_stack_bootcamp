@@ -38,6 +38,40 @@ main{
 
 
 
+.image-sec-images img:nth-child(1) {
+    position: relative;
+    right: 50px;
+    bottom: 0px;
+    height: 300px;
+     width: 250px;
+ }
+ .image-sec-images img:nth-child(2) {
+    position: relative;
+    right: 50px;
+    height: 250px;
+    bottom: -10px;
+   
+ }
+ .image-sec-images img:nth-child(3) {
+    position: relative;
+    right: 50px;
+    width: 200px;
+ }
+
+ .image-tilted h1 {
+    
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.image-tilted {
+    height:100vh;
+
+}
+
+
+
 
 
 
