@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* main sec  */
+.main{
+    background-color: black;
+background-image: url('./Photos/mainBackground.png');
+
+width: 100vw;
+height: 100vh;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+display: flex;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+gap: 20%;
+
+}
+.main::after{
+    background-color: rgba(0, 0, 0, 0.74);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+
+nav{
+    z-index: 2;
+    margin-top: 30px;
+     display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(223, 223, 223);
+    padding-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+
+}
+
+
+ul{
+    display: flex;
+    gap: 10em;
+    align-items:center ;
+  flex-wrap: wrap;
+}
+ul li {
+    list-style-type: none;
+
+}
+ul li a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+}
+
+/* hero section  */
+ .hero-dics {
+    color:rgb(255, 255, 255);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    /* height: 100%; */
+    gap: 50px;
+
+ }
+
+ .hero-dics h1 {
+    font-size: 4rem;
+ }
+ .hero-dics p {
+    font-size: 15px;
+    color: rgb(204, 204, 204);
+ }
+
+ .hero-dics button {
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-weight: bolder;
+    color: white;
+    background-color: blueviolet;
+ }
+
+/* hero section  */

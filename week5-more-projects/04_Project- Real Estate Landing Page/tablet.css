@@ -1,0 +1,17 @@
+@media (max-width:1024px) and (min-width:768px) {
+
+ 
+    
+ul{
+   
+    gap: 40px;
+    
+}
+ul li a {
+    font-size: 15px;
+}
+nav {
+    padding-bottom: 20px;
+}
+    
+    }

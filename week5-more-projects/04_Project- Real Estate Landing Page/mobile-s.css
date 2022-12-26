@@ -1,0 +1,16 @@
+@media (max-width:375px) and (min-width:300px) {
+
+    
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+
+    }
+    ul{
+        gap: 15px;
+    }
+    
+    
+    
+    }
