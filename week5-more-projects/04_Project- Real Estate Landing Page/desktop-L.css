@@ -11,10 +11,11 @@
     background-color: black;
 background-image: url('./Photos/mainBackground.png');
 
-width: 100vw;
-height: 100vh;
+width: 99vw;
+height: 101vh;
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: cover;
+background-position: center;
 display: flex;
 justify-content: start;
 align-items: center;
@@ -26,10 +27,10 @@ gap: 20%;
     background-color: rgba(0, 0, 0, 0.74);
     content: '';
     display: block;
-    height: 100%;
+    height: 101%;
     position: absolute;
     width: 100%;
-}
+} 
 
 
 nav{
@@ -49,7 +50,7 @@ nav{
 
 ul{
     display: flex;
-    gap: 10em;
+    gap: 5em;
     align-items:center ;
   flex-wrap: wrap;
 }
@@ -90,7 +91,21 @@ ul li a {
     border-radius: 25px;
     font-weight: bolder;
     color: white;
-    background-color: blueviolet;
+    background-color: #6663E9;
  }
 
+
+
+ .logo-row {
+    background-color: white;
+    z-index: 3;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
 /* hero section  */

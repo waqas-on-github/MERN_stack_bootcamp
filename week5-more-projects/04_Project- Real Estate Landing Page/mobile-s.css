@@ -11,6 +11,17 @@
         gap: 15px;
     }
     
-    
+    .hero-dics h1 {
+        font-size: 2rem;
+     }
+
+     .hero-dics button {
+        padding: 10px 30px;
+
+     }
+
+     .hero-dics {  
+        gap: 30px  ;
+     }
     
     }
