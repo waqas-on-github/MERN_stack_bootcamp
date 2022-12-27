@@ -38,10 +38,39 @@ nav {
     gap: 16vh;
  }
     
+ .news-letter {
+    width: 60%;
+     gap: 40px;
+    
+}
+.news-letter h1   {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+
+.news-letter input {
+    background-color: #47474700;
+     border: none ;
+     outline: none ;
+     color: white;
+     padding: 5px;
+     width: 70%;
+     
+}
+.news-letter .inp {
+    width: 70%;
+    gap: 14px;
+  
+}
 
 
 
-
+.news-letter button {
+    padding: 10px 20px ;
+    
+}
 
 
 

@@ -185,4 +185,65 @@
     
 }
 
+    
+.news-letter {
+    width: 80%;
+     gap: 40px;
+    
+}
+.news-letter h1   {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+
+.news-letter input {
+    background-color: #47474700;
+     border: none ;
+     outline: none ;
+     color: white;
+     padding: 5px;
+     width: 70%;
+     
+}
+.news-letter .inp {
+    width: 70%;
+    padding:  8px ;
+    gap: 14px;
+    /* border: 10px solid red; */
+  
+}
+
+
+
+.news-letter button {
+    padding: 10px 20px ;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
