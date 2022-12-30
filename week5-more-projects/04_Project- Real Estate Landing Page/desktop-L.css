@@ -436,6 +436,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 
