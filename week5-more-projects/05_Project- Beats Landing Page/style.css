@@ -36,11 +36,13 @@ nav ul li {
 
 }
 
-nav  li a  {
+ a  {
 
-   text-decoration: none;
+    text-decoration: none;
+   
    color: white;
 }
+
 
 
 nav {
@@ -284,41 +286,172 @@ button{
 
 
 .choose-style
-{
+{    
     width: 500px;
-    border: 1px solid red ;
+    /* border: 1px solid red ; */
     place-self: center;
 }
 .style-wrapper h4{
     color: white;
-    font-size: 14px;
+    font-size: 10px;
 }
 
+.style-wrapper img {
+    width: 15px;
+}
 .style-wrapper p{
     color: gray;
-    font-size: 12px;
+    font-size: 10px;
 
+}
+
+.style-wrappera {
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(140px ,1fr ));
+  row-gap: 50px;
+  background:url(./Icons/productLogo.png)  top;
+  padding-top: 150px;
+ 
+  background-repeat: no-repeat ;
+  /* column-gap: 30px; */
+
+}
+
+.style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .style img:nth-child(1) {
+    transform: translateY(30px);
     width: 50px;
 }
 
 
-.style {
-    border: 1px solid white;
-    width: 150px;
-}
-
 .style-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit ,minmax(150px ,1fr ));
+    background-color: #181A1B;
+    padding: 10px;
+    height: 90px;
+    width: 100px;
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+
+}
+
+.style-wrapper img {
+   width: 17px;
+   background-color: #000000;
+   /* border: 1px solid red ; */
+   padding: 4px;
 }
 
 
 
 
+footer {
+    color: white;
+    /* display: grid; */
+    /* grid-template-columns:   repeat(auto-fit ,minmax(200px ,1fr))   ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     gap: 100px;
+    width: 100%;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: rgb(194, 194, 194);
+    font-size: 12px;
+}
+
+
+
+.subscribe  {
+    place-self: center ;
+    display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+    /* padding-right: 20; */
+
+}
+.subscribe .inp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    background-color: #181A1B;
+    border-radius: 5px;
+
+    
+
+    
+    
+}
+
+.subscribe .inp input {
+    height: 40px;
+    background-color: #181A1B;
+
+    border: none;
+
+}
+.subscribe .inp input:focus {
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.subscribe .inp  button {
+    display: flex;
+    align-items: center;
+   
+    border-radius: 0px 0px ;
+    padding: 0px 10px;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #000000;
+}
+
+
+.subscribe .icons {
+    display: flex;
+    gap: 15px ;
+}
+
+.products ,.suppport {
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 10px;
+}
 
 
 
 
+ a {display: inline; position: relative; padding: 10px; cursor: pointer;}
+ a::after{content: ''; background: gray; position: absolute; top: 37px; left: 0px;}
+ a:hover::after{animation: hover .3s ease-out forwards;}
+@keyframes hover{from {width:0px; height:1px;} to{width: 60px; height: 1px;}}
+
+button:hover {
+    transition: all ease-in-out 0.3s ;
+    
+     border-radius: 0px 0px ;
+     border-right: 1px dotted     gray;
+     border-left: 1px dotted    gray;
+   
+  
+
+}

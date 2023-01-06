@@ -15,8 +15,8 @@
 
   nav {
     gap: 30px;
-padding: 10px 100px ;
-
+     padding: 10px 100px ;
+    
 
   }
   ul{
@@ -74,5 +74,29 @@ padding: 10px 100px ;
    }
 
 
+
+   .choose-style {
+    width: 70%;
+    place-self: center center;
+   }
+
+
+   .style-wrappera {
+    place-self: center center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px ,1fr ));
+   
+  
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns:   repeat(auto-fit ,minmax(200px ,1fr))   ;
+    place-items: center;
+ 
+
+    
+}
+ 
 
 }

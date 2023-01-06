@@ -4,7 +4,6 @@
 
     .logos{
         padding: 0px 10px ;
-        border: 2px solid rebeccapurple;
     }
     .logos img {
         padding: 0px 0px;
@@ -28,5 +27,19 @@
     }
     
 
+
+    .choose-style {
+        width: 100%;
+        place-self: center center;
+       }
+    
+    
+       .style-wrappera {
+        place-self: center center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(250px ,1fr ));
+       
+      
+      }
     
 }
