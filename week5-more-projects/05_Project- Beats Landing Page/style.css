@@ -223,33 +223,45 @@ button{
 
 /* <!-- immerse section  --> */
  .immerse {
-     background-color: #181A1B;
      color: #ffffff;
-     width: 600px;
+     width: 600px; 
      place-self: center center;
-     padding: 50px 10px  ;
+     
      border-radius: 10px;
-   
+     
+    }
+    
+    .immer-grid{
+        padding: 50px 10px;
+        background-color: #181A1B;
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(250px ,1fr));
+        place-items: center  center ;
+        border-radius: 20px;
+        
 
- }
-
-
-
-.immer-img img {
-    width: 200px;
-    border: 1px solid   red ;
-}
-
-
-.immerse-left {
+    }
+    
+    
+    
+    .immer-img img {
+        width: 200px;
+    }
+    
+    
+    .immerse-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    border: 1px solid red ;
+     /* place-self: end center; */
+    
+
+
 } 
+
 .immerse-left button {
-    background-color: #0F0F10;
+    background-color: #000000;
     border-radius: 5px ;
     padding: 10px 20px;
     display: flex;
@@ -259,10 +271,54 @@ button{
 }
 
 .immerse-left h2 {
-    font-size: 15px;
+    font-size: 18px;
+
 
 }
 .immerse-left p {
     font-size: 12px;
+    color: gray;
+
 
 }
+
+
+.choose-style
+{
+    width: 500px;
+    border: 1px solid red ;
+    place-self: center;
+}
+.style-wrapper h4{
+    color: white;
+    font-size: 14px;
+}
+
+.style-wrapper p{
+    color: gray;
+    font-size: 12px;
+
+}
+
+.style img:nth-child(1) {
+    width: 50px;
+}
+
+
+.style {
+    border: 1px solid white;
+    width: 150px;
+}
+
+.style-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(150px ,1fr ));
+}
+
+
+
+
+
+
+
+

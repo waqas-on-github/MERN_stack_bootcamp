@@ -59,6 +59,19 @@ padding: 10px 100px ;
 
 
 
+  .immer-grid {
+    gap: 40px;
+  }
+
+  .immerse {
+    color: #ffffff;
+    width: 80%; 
+    place-self: center center;
+      gap: 50;
+    border-radius: 10px;
+    
+    
+   }
 
 
 

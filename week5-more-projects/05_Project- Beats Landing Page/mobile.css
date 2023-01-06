@@ -13,5 +13,20 @@
     }
 
 
+    .immerse{
+        color: #ffffff;
+        width: 100vw; 
+        place-self: center center;
+          gap: 50px;
+        border-radius: 10px;
+        
+        
+       }
+
+       .immer-img img {
+        width: 150px;
+    }
+    
+
     
 }
