@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    display: grid;
+    place-items: center ;
+    background-color: #ffffff;
+}
+
+body{
+    display: grid;
+    background-color: #0F0F10;
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: 1fr;
+    gap: 100px;
+}
+
+main {
+
+ 
+    background: url(./Photos/mainImage.png)   top -10%  left 20%, url(./Photos/onEar.png)  bottom 90%  left 60%   ;
+    background-size: 200px ,300px;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-row: 10px 500px 300px 100px 1000px;
+    row-gap: 10vh;
+}
+
+nav ul li {
+   list-style-type: none;
+
+}
+
+nav  li a  {
+
+   text-decoration: none;
+   color: white;
+}
+
+
+nav {
+grid-column: 1/-1;
+grid-row: 1/2;
+
+display: flex;
+justify-content: space-around;
+place-items: center; 
+gap: 100px;
+padding: 20px 50px ;
+flex-wrap: wrap;
+
+}
+nav button {
+        background-color: #1E1E21;
+        padding:10px  50px ;
+        border-radius: 10px;
+    }
+
+ul {
+   display: flex;
+   gap: 50px;
+}
+
+.beats{
+    color: #ffffff;
+    grid-column: 4/-1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 50px;
+}  
+.beats .disp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beats p {
+    line-height: 20px;
+    font-size: 13px;
+    word-spacing: 5px;
+    color: grey;
+}
+.beats h1 {
+    font-size: 3.2rem;
+}
+
+
+button{
+    background-color: #1E1E21;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.beats  button {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.logos {
+
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+.logos img {
+    padding: 0px 20px;
+
+}
+
+
+.specs {
+   color: #ffffff;
+   background: url(./Icons/specsLogo.png) top center;
+   background-repeat: no-repeat ;
+   display: grid;
+   /* grid-template-columns: 0.5fr 1fr 1fr 0.5fr; */
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+   place-content: center;
+   place-items: center;
+   padding-top: 100px;
+   
+}
+
+.spec-data{
+    grid-column: 2/3;
+    grid-row: 1/2;  
+    display: flex;
+  
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+ 
+}
+
+.specs .image  {
+    
+    grid-column: 3/3;
+    grid-row: 1/2;
+
+}
+
+
+.spec-data h4{
+  font-size: 1rem;
+  padding:  10px 0px;
+}
+.spec-data p{
+    font-size:9px;
+    color: grey;
+
+  }
+  
+
+  .items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+  }
+
+
+
+
+  .case {
+    background: url(./Icons/caseLogo.png)  top center;
+    background-repeat: no-repeat ;
+    padding-top: 100px;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    place-items: center;
+     gap: 5rem;
+  }
+
+
+
+  .case img {
+    place-self: center end;
+  }
+
+  .para {
+    place-self: center start;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .para button {
+    padding: 8px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 12px;
+  }
+
+  .para p {
+    line-height: 25px;
+    color: grey;
+    font-size: 14px;
+
+  }
+
+
+
+
+/* <!-- immerse section  --> */
+ .immerse {
+     background-color: #181A1B;
+     color: #ffffff;
+     width: 600px;
+     place-self: center center;
+     padding: 50px 10px  ;
+     border-radius: 10px;
+   
+
+ }
+
+
+
+.immer-img img {
+    width: 200px;
+    border: 1px solid   red ;
+}
+
+
+.immerse-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border: 1px solid red ;
+} 
+.immerse-left button {
+    background-color: #0F0F10;
+    border-radius: 5px ;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.immerse-left h2 {
+    font-size: 15px;
+
+}
+.immerse-left p {
+    font-size: 12px;
+
+}

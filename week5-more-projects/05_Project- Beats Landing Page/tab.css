@@ -1,0 +1,65 @@
+@media  (max-width :768px){
+
+
+    .beats{
+        color: #ffffff;
+        grid-column: 1/-1;
+        place-self: center;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 30px;
+    }  
+
+  nav {
+    gap: 30px;
+padding: 10px 100px ;
+
+
+  }
+  ul{
+    gap: 15vw;
+  }
+
+
+  .specs {
+    gap: 10px;
+ 
+
+ }
+
+
+
+
+
+.image img {
+    
+   width: 40vw;
+
+}
+.logos{
+    padding: 0px 20px ;
+}
+.logos img {
+    padding: 0px 15px;
+    width: 80px;
+    
+}
+
+
+  .case img {
+    place-self: center center;
+  }
+
+  .para {
+    place-self: center center;
+  }
+
+
+
+
+
+
+}

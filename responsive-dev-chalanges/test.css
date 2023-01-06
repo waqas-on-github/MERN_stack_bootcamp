@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1000px;
+    border: 1px solid red;
+    display: grid;
+    justify-content: end;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(3 ,500px) ;
+    place-items: center;
+    place-content: end;
+
+
+}
+
+.item {
+    color: white;
+    background-color: black;
+    padding: 20px 10px;
+    width: fit-content;
+    align-self: center;
+}

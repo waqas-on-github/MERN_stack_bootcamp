@@ -1,0 +1,17 @@
+@media  (max-width:425px){
+
+
+
+    .logos{
+        padding: 0px 10px ;
+        border: 2px solid rebeccapurple;
+    }
+    .logos img {
+        padding: 0px 0px;
+        width: 10px;
+        
+    }
+
+
+    
+}

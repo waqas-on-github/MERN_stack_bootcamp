@@ -102,21 +102,18 @@ button {
         
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         gap: 100px;
-        justify-content: center;
-        align-items: center;
 
 
     }
     .totals {
         grid-column: 1/-1;
-        justify-content: center;
-        align-items: center;
+        place-items: center ;
     }
     form {
+        place-items: center ;
+        
         grid-column: 1/-1;
-        width: 60%;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
     }
   }
 
@@ -125,21 +122,18 @@ button {
         
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 100px;
-        justify-content: center;
-        align-items: center;
 
 
     }
     .totals {
-        grid-column: 1/-1;
-        justify-content: center;
-        align-items: center;
+        grid-column: 1/-2;
+        place-items: center ;
+        
     }
     form {
-        grid-column: 1/-1;
+        place-items: center ;
+        grid-column: 1/-2;
         width: 100%;
-        justify-content: center;
-        align-items: center;
     }
   }
 /*   */
