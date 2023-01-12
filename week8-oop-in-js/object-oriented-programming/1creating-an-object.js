@@ -1,5 +1,5 @@
 // object oriented programming 
-
+// goal  the main goal is to put appropreate data and logic bundeld up to gather 
 
 // lets stsrt with simple example we wanna create character in game and and ites few action he can do 
 
@@ -18,7 +18,10 @@
  
 
 
-// so whats happning here we encapsulated data and logic 
+// so whats happning here we encapsulated data and logic     
+//  but this approch has two main problem
+//  repatative (every time we need object we need to handcraft it )
+
 
 
 
@@ -36,7 +39,9 @@
  console.log(user2.incrementscore());
  console.log(user2.incrementscore());
  console.log(user2.incrementscore());
+ 
 
+ // same problem here also 
 
 
 //  Third method "object.create "
@@ -58,7 +63,7 @@
 // now we have a another problem 
   // we can not repeate our selfs again and again cuz its useless our programm will not be memory efficent 
 
-//   so we know in js functions. their job is simply reusabilty of any logic so we can use function here also 
+//   so we know  functions in js . their job is simply reusabilty of any logic so we can use function here also 
 
 
 function createUser(name ,score  ){
@@ -89,11 +94,11 @@ console.log(blueuser.increm())
 
 
 
-// with this approch we can generate  as many objects we want but this approch also have some perfomance and memory issues
+// with this approch we can generate  as many objects we want but this approch also have some perfomance  issues
 
 // as you can see we are returning whole object always in real world seniros this can be 100s properties and 100s of methods so 
-// for just one event like button press its so costy for memory to run 100s lines of code rather then a single funcation we need  so
-// we must have to find some another more  momorey efficent way 
+// for just one event like button press its so costy for memory to run 100s of lines of code rather then a single funcation we need  so
+// we must have to find some another more  memorey efficent way 
 
 
 
