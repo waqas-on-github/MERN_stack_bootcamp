@@ -1,10 +1,10 @@
 
 
-var teacher ="kyle"
+var teacher ="kyle"   // ------> teacgher varaable in globle sope 
 
 
 function  otherclass () {
-    var teacher="suzy"
+    var teacher="suzy"    // -------- teacher varaiable in function scope  
     console.log(teacher);
 }
 

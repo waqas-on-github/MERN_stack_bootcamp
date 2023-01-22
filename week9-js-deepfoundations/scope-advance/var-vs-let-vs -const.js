@@ -12,11 +12,10 @@ let r= 2000;
  r= 3000;   // let can be reassigned but can not be  reintilized 
 
 
-
-
-
-
-
+const z=10000;
+console.log(z);
+// const z=2 ;  not allowed 
+// z=2 ;  not allowed 
 
 // 1 var is not block scoped 
 
@@ -25,11 +24,10 @@ if (true)
     var x=100;
 }
 
-
 console.log(x);
 
 
-   // let is block scoped 
+   // let and const are  block scoped always 
 
 if(true) {
     let y=200

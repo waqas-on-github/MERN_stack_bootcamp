@@ -1,0 +1,9 @@
+core js 
+
+1 javascript hard parts ( functions /clousers/scope /hoisting  )
+2 object oriented javascript 
+3 ascync js (callbacks / promises /ascync await ) 
+4 functional js (map flter reduce find and immutability)
+5 Dom (document object model)
+ 
+node js 

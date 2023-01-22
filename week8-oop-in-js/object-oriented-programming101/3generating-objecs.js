@@ -37,10 +37,8 @@
 function createUser(name ,score )  {
          let user =Object.create(userFunction)    // this will create new empty  object bu linked with userfuncation object 
          // lets fiil in this object
-    
          user.name =name ;
          user.score =score ;
-    
         return user
       }
 

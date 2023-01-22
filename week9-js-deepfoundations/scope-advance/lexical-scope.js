@@ -11,3 +11,4 @@ function outerclass() {  //outerclass can assess  globle scope varaables  and it
 
 
 outerclass()
+
