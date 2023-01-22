@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div generator</title>
+</head>
+<style>
+
+body{
+    background-color: rgb(39, 39, 39);
+    width: 99%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.parent {
+    border: 1px solid rgb(143, 143, 143) ;
+    width: 90%;
+    height: 90%;
+
+    
+}
+
+.square{
+    position: absolute;
+    width: 50px;
+    top: 300px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(39, 39, 39);
+    
+
+}
+button{
+    margin-top: 30px ;
+    padding: 20px 30px  ;
+    border: none;
+    font-size: 30px;
+  
+    background: rgb(24,195,78);
+background: linear-gradient(90deg, rgba(24,195,78,1) 0%, rgba(0,241,255,1) 35%, rgba(255,255,255,1) 100%);
+}
+.animate {
+    animation: anim 2s ease-in-out infinite;
+}
+
+button:hover{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,241,255,1) 35%, rgba(2,255,125,1) 100%);
+}
+
+
+@keyframes anim {
+  0% {
+    transform: scale(2);
+  }
+  30% {
+    transform: translateX(200px);
+  }
+  50% {
+    transform: matrix(0, 1, 1, 0, 0, 0);
+  }
+  
+  70%{
+    transform: translateY(200px );
+  }
+
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+
+</style>
+<body>
+    <button>Animate All </button>
+    <div class="parent">
+
+    </div>
+</body>
+<script>
+
+
+
+
+
+let parent=document.querySelector(".parent")
+
+parent.addEventListener("click" , (e)=> {
+    let elm=document.createElement("div")
+     elm.classList.add("square")
+     elm.style.backgroundColor= "#" + Math.floor(Math.random()*16777215).toString(16);
+     parent.appendChild(elm)
+     elm.style.top =e.clientY  + (-30)+"px"
+     elm.style.left=e.clientX +  (-19)+"px" 
+})
+
+let btn =document.getElementsByTagName("Button")[0]
+
+btn.addEventListener("click" , ()=> {
+  let childs =[...parent.childNodes]
+  childs.shift()
+
+  for (ch of childs) {
+    ch.classList.add("animate")
+  }
+
+
+})
+</script>
+
+
+
+</html>
