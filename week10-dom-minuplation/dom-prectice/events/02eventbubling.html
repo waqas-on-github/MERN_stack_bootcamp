@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbling/capturing</title>
+
+</head>
+
+<style>
+    .grandparent{
+        border: 2px solid red ;
+        width: 500px;
+        height: 500px ;
+    }
+
+
+    .parent{
+        border: 2px solid red;
+        width: 300px;
+        height: 300px;
+    }
+
+    .childern{
+        border: 1px solid red ;
+        width: 100px;
+        height: 100px;
+    }
+
+    .color{
+        background-color: green;
+        color: white;
+    }
+</style>
+<body>
+    
+<div class="grandparent">
+    <div class="parent">
+        <div class="childern">
+          <button class="btn">clickme </button>
+        </div>
+    </div>
+</div>
+
+<button class="bub">bubbling</button>
+<button class="cap">capturing</button>
+
+
+</body>
+<script>
+let gp=document.querySelector(".grandparent")
+let pp=document.querySelector(".parent")
+let ch =document.querySelector(".childern")
+let btn =document.querySelector(".btn")
+
+let bubbtn=document.querySelector(".bub")
+let capbtn=document.querySelector(".cap")
+
+
+bubbtn.addEventListener("click" ,() =>{
+    bubbtn.classList.add("color")
+    btn.addEventListener("click" ,(e) => {
+
+    console.log("btn logged")
+})
+
+ch.addEventListener("click" ,(e) => {
+    console.log("child logged")
+})
+
+pp.addEventListener("click" ,(e) => {
+    console.log("parent logged")
+})
+
+gp.addEventListener("click" ,(e) => {
+    console.log("grand parent  called ");
+})
+})
+
+
+capbtn.addEventListener("click" ,()=>{
+    capbtn.classList.add("color")
+
+    btn.addEventListener("click" ,(e) => {
+    console.log("btn logged")
+}, true)
+
+ch.addEventListener("click" ,(e) => {
+    console.log("child logged")
+}, true)
+
+pp.addEventListener("click" ,(e) => {
+    console.log("parent logged")
+}, true)
+
+gp.addEventListener("click" ,(e) => {
+    console.log("grand parent  called ");
+}, true)
+})
+
+
+
+
+
+
+
+
+</script>
+</html>

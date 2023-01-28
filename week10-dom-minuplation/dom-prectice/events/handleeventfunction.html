@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handle event</title>
+</head>
+<style>
+.color {
+    background-color: green;
+    color: white;
+}
+
+.changed{
+    background-color: aqua;
+}
+</style>
+<body>
+    <button class="hhh">click me </button>
+    <input type="text" placeholder="fill me ">
+    <button>hover me </button>
+</body>
+<script>
+
+    let bdy=document.body;
+    let btn1=bdy.firstElementChild;
+    let inp =btn1.nextElementSibling;
+    let btn2=inp.nextElementSibling;
+    
+    btn1.addEventListener("click",handleevent)
+    inp.addEventListener("change",handleevent)
+    btn2.addEventListener("mouseover", handleevent)
+
+     function handleevent(event) {
+      if(event.type==="click") {
+        console.log("clicked")
+      }
+     else if(event.type==="change"){
+         console.log('changed')
+      }
+
+      else if(event.type==="mouseover"){
+        console.log("hoverd");
+      }
+
+
+
+
+         
+     } 
+
+   
+   
+   
+
+
+
+
+</script>
+</html>
