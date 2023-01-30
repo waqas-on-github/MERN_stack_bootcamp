@@ -172,6 +172,24 @@ header.firstElementChild.setAttribute("src" ,"./assets/ineuron-logo.png")
 let appprice =document.querySelector(".app_price")
 appprice.firstElementChild.innerText="$10"
 ```
+
+### project 7 form minuplation 
+
+
+```javascript 
+
+ let form=document.querySelector("form") ;
+    form.firstElementChild.disabled=false
+    form.lastElementChild.disabled=false
+
+    let submit =form.lastElementChild
+      submit.addEventListener("click" ,(e) => {
+      e.preventDefault()
+      let left_card =document.querySelector(".main__languages");
+      let spliced= [...left_card.children].splice(0,6)
+      left_card.replaceChildren(...spliced)
+    })
+```
 ### project 8 navbar minuplation and scrollbar 
 
 ```javascript 
