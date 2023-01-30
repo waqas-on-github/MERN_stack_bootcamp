@@ -72,4 +72,26 @@
       </section>
     </div>
   </body>
+
+  <script>
+    let form=document.querySelector("form") ;
+    form.firstElementChild.disabled=false
+    form.lastElementChild.disabled=false
+
+    let submit =form.lastElementChild
+    submit.addEventListener("click" ,(e) => {
+      e.preventDefault()
+      let left_card =document.querySelector(".main__languages");
+   
+      let spliced= [...left_card.children].splice(0,6)
+      left_card.replaceChildren(...spliced)
+       let [span,a1,a2,a3 ,a4,]=spliced
+
+
+
+      
+
+    })
+    
+  </script>
 </html>
