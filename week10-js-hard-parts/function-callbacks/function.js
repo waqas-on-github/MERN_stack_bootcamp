@@ -1,4 +1,4 @@
-
+//simple function 
 function square  (num) {
     return num *num 
 }
@@ -7,7 +7,7 @@ square(10)
 
 
 
-
+// function get array and multply  it to two  
 function multplyby2(array){
     const result =[]
     for(let i=0 ; i<array.length;i++) {
@@ -16,9 +16,9 @@ function multplyby2(array){
     return result
 }
 
-
 console.log(multplyby2([1,2,3]))
 
+// function get array and divide   it to two  
 
 function divideby2(array){
     const result =[]
@@ -30,7 +30,8 @@ function divideby2(array){
 
 
 console.log(divideby2([1,2,3]))
-
+// function get array and add three into it  
+  
 function addby3(array){
     const result =[]
     for(let i=0 ; i<array.length;i++) {
