@@ -1,5 +1,7 @@
 // requirment = create generilased array method 
 
+//add and multply numbers 
+
 
 function copyarrayandminuplate(array,operation) {    //------>  getting aray and function as parameter
  
