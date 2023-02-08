@@ -1,0 +1,260 @@
+/* color secheme  */
+:root {
+  --main: #C21010;
+  --sec: #262626;
+  --tur:#E6CC62;
+  --white:#EEECE6;
+  --text-white:#ffffff
+
+}
+
+
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: "lato";
+
+
+}
+
+
+#navbar{
+  padding: 20px 50px ;
+  font-family: "lato";
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px  ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  background: rgb(0, 0, 0);
+
+  top: 0px;
+  align-self: baseline;
+  position: fixed ;
+  
+  width: 100%;
+
+}
+#navbar ul {
+  display: flex;
+  width: 50%;
+  min-width: 300px;
+  justify-content:space-around;
+  gap: 20px
+
+
+
+}
+#navbar ul li a{
+  color: var(--text-white);
+  text-decoration: none;
+
+}
+
+#navbar ul li{
+  list-style: none;
+}
+
+
+#navbar img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* barand hook section  */
+#brandhook-sec{
+  padding: 100px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#brandhook-sec h1 {
+  letter-spacing: 2px ;
+  font-size: 2rem;
+  
+}
+#brandhook-sec p{
+  letter-spacing: 2px ;
+
+  font-size: 1.2rem;
+
+}
+
+/* video sec  */
+.vid-sec{
+  width: 100%;
+}
+
+.vid-sec video {
+  width: 100%;
+}
+
+/* main sec */
+
+.main{ 
+  
+  width: 100vw;
+  height: 100vh;
+  background-position:center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1 all ease-in;
+} 
+
+
+.gallery{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(128, 128, 128, 0.089);
+  padding: 100px;
+}
+
+
+.gallery img {
+ width: 300px;
+ height: 300px;
+}
+
+
+.card-container {
+  perspective: 1000px;
+  height: 300px;
+  width: 300px;
+  /* margin: 50px auto; */
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.front img {
+  width: 100%;
+}
+.back {
+  background-color: #000000;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--text-white);
+  transform: rotateY(180deg);
+   padding-left: 25px;
+   padding-right: 25px;
+  gap: 20px;
+  color: rgb(121, 121, 121) ;
+
+
+  font-family: 'Courier New', Courier, monospace;
+  outline: 2px solid grey  ;
+}
+
+.back p{
+  text-align: justify;
+  line-height: 30px;
+  color: rgb(121, 121, 121) ;
+
+}
+
+.back  button {
+  padding: 15px 25px;
+  border: none;
+  background-color: #000000;
+  color: var(--text-white);
+  font-size:  15px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  transition: background-color 0.5s ease-in-out;
+  border: 1px solid rgb(121, 121, 121) ;
+  color: rgb(121, 121, 121) ;
+
+
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+
+.back button:hover {
+  background-color: #C21010;
+  border: none ;
+  color: white;
+ 
+}
+
+.work{
+  font-size: 3rem ;
+ padding: 50px;   
+ font-family: "lato";
+ font-stretch: ultra-expanded;
+ text-align: center;
+ letter-spacing: 10px;
+
+}
+
+
+
+.services {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+justify-content: center;
+}
+.service {
+  padding-bottom: 100px;
+  width: 90%;
+
+
+  border: 2px solid red ;
+}
+
+.service-heading{
+  font-size: 3rem ;
+  padding-top: 50px;   
+  font-family: "lato";
+  letter-spacing: 10px;
+  font-stretch: ultra-expanded;
+  text-align: center;
+}
+/* servcices slider  */
+
+
+/* clints  */
+
+.clints-heading{
+  font-size: 3rem ;
+  padding-top: 50px;   
+
+  font-family: "lato";
+  letter-spacing: 10px;
+  font-stretch: ultra-expanded;
+  text-align: center;
+
+}
