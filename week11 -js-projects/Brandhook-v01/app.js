@@ -6,15 +6,23 @@ main.classList.add("main")
 
 
 
-let img =document.querySelector(".gallery img")
-console.log(img);
-img.addEventListener("mouseover" ,(e)=> {
-  img.previousElementSibling.style.display="block"
-  
-} )
 
 
-img.addEventListener("mouseleave" ,() => {
-  img.previousElementSibling.style.display="none"
-})
+const slider = document.querySelector('.services');
+const slides = document.querySelectorAll('.img-sec-serv');
+let index = 0;
+
+function changeSlide() {
+  index++;
+  if (index >= slides.length) {
+    index = 0;
+  }
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(changeSlide, 2000);
+
+
+
+
 

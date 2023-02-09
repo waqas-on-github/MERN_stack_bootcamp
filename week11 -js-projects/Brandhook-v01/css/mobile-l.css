@@ -1,0 +1,50 @@
+@media screen and (max-width:768px)  and (min-width:425px){
+
+  #navbar{
+   width: 100%;
+  }
+
+ #navbar ul{
+    flex-wrap: wrap;
+  
+    
+ }
+
+ .brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+   }
+   .brand h1 {
+    width: 100%;
+    font-size: 1.2rem;
+
+ }
+  
+*{
+   padding: 0;
+}
+
+
+.chose{
+   letter-spacing: 3px;
+   font-size: 1.3rem;
+   word-spacing: 2px;
+   padding-bottom: 100px ;
+ }
+
+ .vid-sec{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .vid-sec video {
+   padding: 1px;
+   width: 90%;
+ }
+ 
+ 
+    }

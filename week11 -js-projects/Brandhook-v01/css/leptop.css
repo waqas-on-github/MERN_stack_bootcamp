@@ -1,0 +1,22 @@
+@media screen and (max-width:1024px)  and (min-width:768px){
+
+
+  .gallery{
+    width: 95%;
+    display: grid;
+     grid-template-columns: repeat(auto-fit ,minmax(350px ,1fr) ) ;
+     justify-items: center;
+     
+}
+
+.vid-sec video {
+  width: 100%;
+}
+.chose{
+  letter-spacing: 3px;
+  font-size: 2rem;
+  word-spacing: 2px;
+}
+
+
+  }

@@ -1,0 +1,20 @@
+@media screen and (max-width: 1440px) and (min-width:1024px) {
+     #navbar {
+        padding-left:50px ;
+        padding-right: 50px;
+     }
+    
+     .vid-sec video {
+        width: 90%;
+      }
+
+      .gallery{
+
+        width: 90%;
+       
+        gap:50px;
+        background-color: rgba(128, 128, 128, 0.089);
+        padding: 100px;
+        
+      }
+  }
