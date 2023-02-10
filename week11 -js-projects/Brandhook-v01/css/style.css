@@ -5,7 +5,6 @@
   --tur:#E6CC62;
   --white:#EEECE6;
   --text-white:#ffffff;
-
   --border: rgba(209, 209, 209, 0.151);
     
 
@@ -22,8 +21,6 @@
 }
 
 
-
-
 #navbar{
   position: fixed;
   width: 100%;
@@ -35,7 +32,6 @@
   gap: 50px;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--border);
-
   z-index: 4;
 }
 
@@ -86,17 +82,15 @@
   flex-direction: column;
   gap: 30px;
   background-color: #000000;
-
 }
 
 #brandhook-sec h1 {
   letter-spacing: 2px ;
   font-size: 2rem;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 40px;
-  /* width: 500px; */
-  
+  padding-bottom: 40px;  
 }
+
 #brandhook-sec p{
   letter-spacing: 2px ;
   font-size: 1.2rem;
@@ -134,16 +128,12 @@
 .gallery{
     width: 80%;
     display: grid;
-     grid-template-columns: repeat(auto-fit ,minmax(350px ,1fr) ) ;
-     justify-items: center;
-     /* background-color: #0C0C0C; */
-     border-top: 1px solid rgba(209, 209, 209, 0.151);
-     /* border-bottom: 1px solid rgba(209, 209, 209, 0.151); */
-
+    grid-template-columns: repeat(auto-fit ,minmax(350px ,1fr) ) ;
+    justify-items: center;
+    border-top: 1px solid rgba(209, 209, 209, 0.151);
     row-gap: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
-
     box-sizing: border-box;
   
 }
@@ -165,7 +155,6 @@
 .card {
   width: 100%;
   height: 100%;
-
   position: relative;
   transform-style: preserve-3d;
   transition: all 1s ease;
@@ -198,8 +187,6 @@
    padding-right: 25px;
   gap: 20px;
   color: rgb(121, 121, 121) ;
-
-
   font-family: 'Courier New', Courier, monospace;
 
 }
@@ -214,9 +201,7 @@
 .back  button {
   padding: 15px 25px;
   border: none;
-  /* background-color: #000000; */
   background-color: #0C0C0C;
-
   color: var(--text-white);
   font-size:  15px;
   font-weight: bolder;
@@ -224,8 +209,6 @@
   transition: background-color 0.5s ease-in-out;
   border: 1px solid var(--border) ;
   color: rgb(121, 121, 121) ;
-
-
 }
 
 .card-container:hover .card {
@@ -256,17 +239,13 @@
   display: flex;
   align-items: center;
   padding-top: 100px;
-justify-content: center; 
-background-color: #000000;
-
+  justify-content: center; 
+  background-color: #000000;
 }
 .service {
   width: 80%;
   overflow: hidden;
-  display: flex;
-  
-  
-  
+  display: flex;  
 }
 
 .img-sec-serv  {
@@ -308,7 +287,6 @@ background-color: #000000;
 .clints-heading{
   font-size: 3rem ;
   padding-top: 50px;   
-
   font-family: "lato";
   letter-spacing: 10px;
   font-stretch: ultra-expanded;
@@ -319,7 +297,6 @@ background-color: #000000;
 
 /* brands sec  */
 .brands {
-  border: 1px solid red ;
   padding-top: 100px ;
   display: flex;
   align-items: center ;
@@ -336,8 +313,8 @@ background-color: #000000;
   font-size: 3rem;
   font-family: "lato";
   word-spacing: 10px;
-  /* letter-spacing: 10px ; */
 }
+
 h1{
   letter-spacing: 5px;
 }
@@ -348,11 +325,7 @@ h1{
   align-items: center;
   grid-template-columns: repeat(auto-fit ,minmax(200px ,1fr));
   width: 80%;
-  /* background-color: rgba(128, 128, 128, 0.089); */
   border-top: 1px solid var(--border);
-  /* border-bottom: 1px solid var(--border); */
-
-
   color: var(--border);
   padding: 50px;
   gap: 150px;
@@ -377,15 +350,10 @@ h1{
 }
 .right-container {
   display: flex;
-  
-  /* gap: 80px; */
   flex-direction: column;
-   /* border: 1px solid red; */
 }
 .brands img {
-  width: 90%;
-  
-  /* border: 1px solid red; */
+  width: 90%;  
 }
 .img-sec-serv{
   animation: slide 70s infinite;

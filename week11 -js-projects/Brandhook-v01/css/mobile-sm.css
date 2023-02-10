@@ -1,36 +1,36 @@
 @media screen and (max-width:350px) and (min-width:300px) {
-    .chose{
+.chose{
         letter-spacing: 3px;
         font-size: 1.3rem;
         word-spacing: 2px;
         padding-bottom: 100px ;
       }
      
-      .vid-sec{
+.vid-sec{
         width: 100%;
         display: flex;
         justify-content: center;
       }
       
-      .vid-sec video {
+.vid-sec video {
         padding: 1px;
         width: 90%;
       }
 
-      .gallery img {
+.gallery img {
         width: 100%;
         height: 100%;
        }
        
        
-       .card-container {
+.card-container {
          width: 200px;
          height: 200px;
          perspective: 1000px;
        
-       }
+    }
 
-       .front,
+.front,
 .back {
   height: 100%;
   width: 100%;
