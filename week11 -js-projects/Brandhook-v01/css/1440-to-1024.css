@@ -1,8 +1,5 @@
 @media screen and (max-width: 1440px) and (min-width:1024px) {
-     #navbar {
-        padding-left:50px ;
-        padding-right: 50px;
-     }
+  
     
      .vid-sec video {
         width: 90%;
@@ -17,4 +14,17 @@
         padding: 100px;
         
       }
+
+      .brand{
+      
+        gap: 80px;
+        width: 90%;
+       }
+       .brand h1 {
+        width: 100%;
+        font-size: 1.2rem;
+    
+     }
+
+    
   }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>range</title>
+</head>
+<style>
+
+
+    .div {
+        border: 1px solid red ;
+        width: 100px ;
+        height: 100px ;
+        background-color: rgb(41, 41, 41);
+    }
+</style>
+<body>
+     
+    <input type="range"  value ="0" name="range" id="range" value="10">
+    <p class="val">0</p>
+
+    <div class="div"></div>
+
+
+</body>
+
+<script>
+ let range = document.querySelector("#range")
+ let div =document.querySelector(".div")
+ console.log(range.value);
+
+ range.addEventListener("input" ,() => {
+    range.nextElementSibling.textContent=range.value;
+    div.style.width=`${range.value *(10)}px`
+    div.style.height=`${range.value *(10)}px`
+
+    
+ })
+
+</script>
+</html>

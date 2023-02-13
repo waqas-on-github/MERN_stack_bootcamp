@@ -1,0 +1,35 @@
+.elecparent {
+    display: flex;
+     align-items: center;
+     gap:10px ;
+}
+
+.icon {
+    width: 30px ;
+    height: 30px;
+ 
+}
+
+
+.data   {
+    display: none;
+}
+
+
+.show{
+    display: block;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.move {
+           transition: all 0.5s ease-in-out;
+           transform: rotate(90deg);
+}
+
+
+.trs{
+    transition: all 0.5s ease-in-out;
+
+}

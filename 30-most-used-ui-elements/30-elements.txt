@@ -1,0 +1,59 @@
+Navbar(done )
+Footer
+Carousel
+Accordion
+Modal
+Button
+Form
+Input
+Checkbox
+Radio button
+Dropdown(done)
+Select
+Date picker
+Time picker
+Color picker
+Switch
+Slider
+Progress bar
+Badge
+Chip
+Tooltip
+Toast
+Popover
+Table
+List
+Grid
+Card
+Image
+Video
+Audio
+Map
+Chart
+Graph
+Timeline
+Breadcrumb
+Pagination
+Search
+Filter
+Sort
+Rating
+Review
+Comment
+Share
+Follow
+Like
+Bookmark
+Save
+Print
+Download
+Upload
+Zoom
+Full screen
+Magnify
+Rotate
+Flip
+Expand
+Collapse
+Animate
+Parallax

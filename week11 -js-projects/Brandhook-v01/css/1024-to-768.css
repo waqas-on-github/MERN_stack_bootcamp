@@ -1,6 +1,18 @@
 @media screen and (max-width:1024px)  and (min-width:768px){
 
 
+
+
+
+
+  /* nav sec  */
+  .navul li a {
+    font-size: 1.3rem;
+  }
+  /* nav sec  */
+
+
+
   .gallery{
     width: 95%;
     display: grid;
@@ -17,6 +29,20 @@
   font-size: 2rem;
   word-spacing: 2px;
 }
+
+
+.brand{
+      
+  gap: 80px;
+  width: 90%;
+ }
+ .brand h1 {
+  width: 100%;
+  font-size: 1.2rem;
+
+}
+
+
 
 
   }
