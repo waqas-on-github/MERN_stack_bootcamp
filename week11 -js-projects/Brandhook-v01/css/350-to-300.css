@@ -68,7 +68,9 @@
     color: rgb(121, 121, 121) ;
   
   }
-  
+  .navbar{
+    padding: 20px 30px ;
+  }
   .back  button {
     padding: 7px 15px;
   
@@ -76,14 +78,17 @@
   }
 
   .work{
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .chose{
     font-size: 1.4rem;
+    line-height: 35px ;
   }
   .service-heading{
-    font-size: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 40px;
   }
 
   .brand{
@@ -99,5 +104,70 @@
 
  }
   
+ .main{ 
+  
+
+
+  background: url('/assets/forbanner/01.jpg');
+  width: 100%;
+  height: 100vh;
+  background-position:center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;  
+  object-position: center;
+} 
+
+ /* navsec */
+.navul{
+  display: none;
+}
+
+
+.show{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  gap: 23px;  
+  height: 100vh;
+  position: absolute;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid    red  ; */
+  z-index: 10000000000;
+  background-color: rgb(0, 0, 0);
+  top: 2px ;
+left: 0;
+/* transform: rotate(5deg); */
+
+ 
+}
+
+
+.hide {
+  display: none;
+}
+
+
+.bar {
+  display: flex;
+  width: 20px;
+}
+/* navsec */
+
+
+.crossicon {
+  display: block;
+}
+
+footer{
+  gap: 80px;
+}  
+
+footer .locations img {
+  width: 300px;
+}
+
 
 }

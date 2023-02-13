@@ -1,7 +1,7 @@
 
 
 let main=document.querySelector("main")
-main.style.backgroundImage=  `url(./assets/hero.jpeg)`
+// main.style.backgroundImage=  `url()`
 main.classList.add("main")
 
 
@@ -23,42 +23,40 @@ function changeSlide() {
 setInterval(changeSlide, 2000);
 
 
+// code for nabvar 
+
+let humburger= document.querySelector(".bar")
+let navelemnts=document.querySelector(".navul")
+
+humburger.addEventListener("click" ,() => {
+navelemnts.classList.remove("hide")
+
+   navelemnts.classList.add("show")
+   console.log(navelemnts);
+
+})
 
 
-let hum=document.querySelector(".humbergur")
-let ul=document.querySelector(".navul")
 
-
-
-hum.addEventListener('click' ,() => {
-
-  if( hum.children[0].className==="show"){
-    hum.children[0].classList.add("hide")
-    hum.children[1].classList.remove("hide")
-    hum.children[1].classList.add("show")
-    ul.classList.remove("navul")
-    ul.classList.add("showul")
-    
-  }
-  
-  else if ( hum.children[1].className==="show" ) {
-    hum.children[1].classList.add("hide")
-    hum.children[0].classList.remove("hide")
-    hum.children[0].classList.add("show")
-    ul.classList.remove("showul")
-    ul.classList.add("navul")
-  }
-  
-
- 
-  
-
-
+// hiding side menue for mobile 
+let crossicon =document.querySelector(".crossicon")
+crossicon.addEventListener( "click",() => {
+  console.log(navelemnts);
+navelemnts.classList.remove("show")
+navelemnts.classList.add("hide")
 
 })
 
 
 
 
+// link clicking and sidebar gonna be hide 
 
+let alllis =navelemnts.querySelectorAll("li");
+[...alllis].forEach((e) => {
+  e.addEventListener("click" ,(event) => {
+navelemnts.classList.add("hide")
 
+    
+  })
+})

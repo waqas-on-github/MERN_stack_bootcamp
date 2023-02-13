@@ -5,16 +5,50 @@
   display: none;
 }
 
+.navbar{
+  padding: 20px 2px ;
+}
+.show{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  gap: 23px;  
+  height: 100vh;
+  position: absolute;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid    red  ; */
+  z-index: 10000000000;
+  background-color: rgb(0, 0, 0);
+  top: 2px ;
+left: 0;
+/* transform: rotate(5deg); */
+
+ 
+}
 
 
+.hide {
+  display: none;
+}
 
+
+.bar {
+  display: flex;
+  width: 20px;
+}
 /* navsec */
 
 
+.crossicon {
+  display: block;
+}
 
 
-
-
+.navbar{
+  padding: 20px 50px  ;
+}
 
 
 
@@ -65,7 +99,41 @@
  }
  
 
- 
+ .footerelements{
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
+}
+
+ .logofooter{
+     top: -70px;
+     left: -54%;
+     width: 50px;
+ }
+
+
+
+
+
+
+
+footer {
+  width: 100%;
+   display: flex;
+   align-items:start;
+   justify-content:center;
+   border: 1px solid red ;
+   flex-wrap: wrap;
+   gap: 100px;
+ 
+ }
+
+
+
+footer .locations img {
+  width: 350px;
+}
 
     }
