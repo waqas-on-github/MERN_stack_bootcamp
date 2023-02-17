@@ -10,12 +10,38 @@
 </head>
 <body>
 
-    <h1>weather api </h1>
-    <form action="get"> 
-        <input type="text">
+    <form> 
+        <input  placeholder="enter location " type="text" value="karachi">
         <input type="submit" value="submit">
     </form>
     
+    <div class="weather">
+    <div class="headcomponent">
+        <h1 class="h-city"></h1>
+        <div class="tempc">
+            <h2 class="h-temp"> </h2>
+            <h3>°</h3>
+        </div>
+
+
+        <div class="lowhigh">
+            <div class="maxtemp">
+                <h4 class="high"></h4>
+                <h3>°</h3>
+            </div>
+
+            <div class="lowtemp">
+                <h4 class="low"></h4>
+                <h3>°</h3>
+            </div>
+        </div>
+        
+      
+    </div>
+    <div class="hourlyforcast"></div>
+    </div>
+
+
 </body>
 
 <script src="app.js"></script>
