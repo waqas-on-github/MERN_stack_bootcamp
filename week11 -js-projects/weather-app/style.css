@@ -14,8 +14,7 @@ html{
 body {
 margin-top: 100px;
 width: 80%;
-height: 100vh;
-display: flex;
+    display: flex;
 padding-top: 100px;
 gap: 100px;
 justify-content: start;
@@ -65,4 +64,20 @@ display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.hourlyforcast{
+    display: flex;
+    padding-top: 100px ;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 300px;
+}
+
+.childerflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }

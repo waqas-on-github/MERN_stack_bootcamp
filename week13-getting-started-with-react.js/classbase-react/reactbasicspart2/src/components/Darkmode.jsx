@@ -17,9 +17,10 @@ export default  class  Darkmode extends React.Component{
     render() {
         return(
 
-            <React.Fragment>
-              {}
-            </React.Fragment>
+            <div style={{ height:'100vh',
+                          background:this.state.mode==='light'?'#fff' :'#000'}} >
+              {this.state.mode ==='light'?<button onClick={this.turndark}> dark mode </button> :<button onClick={this.turnlight} > light mode </button>}
+            </div>
         )
     }
 } 
