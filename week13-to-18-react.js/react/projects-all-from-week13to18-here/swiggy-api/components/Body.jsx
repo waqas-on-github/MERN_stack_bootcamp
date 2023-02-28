@@ -11,7 +11,9 @@ const Body=() => {
 
 useEffect(() => {
   getdata()
-},[inpval] )
+  console.log("render");
+ 
+},[] )
 
 
 function filterData(res, inpval) {
