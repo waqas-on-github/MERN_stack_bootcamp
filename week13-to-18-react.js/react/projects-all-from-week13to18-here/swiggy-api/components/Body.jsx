@@ -30,6 +30,8 @@ function filterData(res, inpval) {
  }
 
 return(
+
+  
   <div className='main' > 
         <div className="serachbar">
           <input type="text" placeholder='order food!' 
