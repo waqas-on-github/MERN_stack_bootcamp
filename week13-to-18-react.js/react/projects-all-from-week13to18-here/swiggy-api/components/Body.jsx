@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import  {Img ,Url} from'../const'
 
 
@@ -7,18 +8,19 @@ import  {Img ,Url} from'../const'
 const Body=() => {
 
  let [res,setres] =useState()
+ let [filtedres ,setfilterdres] =useState()
  let [inpval,setinpval] =useState('');
 
 useEffect(() => {
-  getdata()
-  console.log("render");
- 
+  getdata() 
+  console.log("render")
 },[] )
 
 
 function filterData(res, inpval) {
      let result = res?.filter((r) => (r?.data?.name?.includes(inpval)?r :null))
-     setres(result)
+     setfilterdres(result)
+     
    }
   
 
@@ -26,6 +28,8 @@ function filterData(res, inpval) {
     let data =await  fetch(Url)
     let json=await data.json()
     setres(json?.data?.cards[2]?.data?.data?.cards)
+    setfilterdres(json?.data?.cards[2]?.data?.data?.cards)
+    
   
  }
 
@@ -44,12 +48,16 @@ return(
 
 
 
-             {res?.map((r) => {   
+             {filtedres?.map((r) => {   
+              
              return(
-               <div className='card-item' key={r?.data?.uuid}> 
+               <Link to={'/res/' + r.data.id} className='card-item' key={r?.data?.uuid}> 
                      <img src={Img+r.data.cloudinaryImageId} />
                      <h3> {r.data.name}</h3>
-               </div>
+                     
+               </Link>
+
+
              )})} 
           </div>
   </div>

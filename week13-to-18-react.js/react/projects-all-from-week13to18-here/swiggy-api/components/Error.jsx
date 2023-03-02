@@ -1,9 +1,12 @@
 import React from 'react'
+import { useRouteError } from 'react-router-dom'
 
-export default function Error() {
+function Error() {
+ let err =useRouteError()
   return (
-    <div>Error</div>
+    <div>  {err.status}  {err.statusText} </div>
   )
 }
 
 
+export default Error

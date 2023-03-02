@@ -65,3 +65,30 @@ body{
     padding: 20px;
     gap: 50px;
 }
+
+
+.menue-card{
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   gap: 100px;
+   padding: 100px;
+}
+
+.menue-card img {
+    width: 500px ;
+}
+.image-menue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px ;
+    
+}
+.menue {
+        width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+}
