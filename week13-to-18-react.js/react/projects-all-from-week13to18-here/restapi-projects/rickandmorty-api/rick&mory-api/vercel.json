@@ -1,0 +1,17 @@
+{
+  "alias": [
+    "parcel-react-tailwind-template"
+  ],
+  "version": 2,
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "public"
+}

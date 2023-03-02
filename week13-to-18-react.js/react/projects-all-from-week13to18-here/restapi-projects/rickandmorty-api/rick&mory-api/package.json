@@ -1,0 +1,51 @@
+{
+  "name": "parcel-react-tailwind-template",
+  "version": "0.0.1",
+  "main": "index.html",
+  "scripts": {
+    "start": "MODE=development parcel serve src/index.html",
+    "build": "MODE=production parcel build src/index.html --no-scope-hoist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tehpsalmist/parcel-react-tailwind-template.git"
+  },
+  "keywords": [
+    "parcel",
+    "react",
+    "tailwindcss",
+    "template"
+  ],
+  "author": "Ben Steward <bstewardcodes@gmail.com> (https://tehpsalmist.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tehpsalmist/parcel-react-tailwind-template/issues"
+  },
+  "homepage": "https://github.com/tehpsalmist/parcel-react-tailwind-template#readme",
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "parcel": "latest",
+    "process": "^0.11.10",
+    "tailwindcss": "latest"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^6.8.2"
+  },
+  "app": "public/index.html",
+  "targets": {
+    "main": false,
+    "app": {
+      "engines": {
+        "browsers": "Chrome 70"
+      }
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
