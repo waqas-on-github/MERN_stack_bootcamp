@@ -6,6 +6,8 @@ import Err from './Err'
 import './index.css'
 import Mealdetail from './Mealdetail'
 import Nav from './Nav'
+import Showbyingredent from './Showbyingredent'
+import Showcatagory from './Showcatagory'
 
 
 
@@ -36,6 +38,18 @@ let router =createBrowserRouter([
         {
             path:'/meal/:id',
             element:<Mealdetail/>
+        },
+
+
+        {
+          path:'/catagory/showlist/:id',
+          element:<Showcatagory/>
+        }
+        ,
+        { 
+          path:'/meal/ingredent/showing/:id',
+          element: <Showbyingredent/>
+
         }
 
   ]

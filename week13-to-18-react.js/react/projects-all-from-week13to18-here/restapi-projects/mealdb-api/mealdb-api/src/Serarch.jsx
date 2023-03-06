@@ -1,12 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Input } from 'antd'
 function Hero(props) {
-
     let [val ,setval] =useState('')
-   
+    let [mealval ,setmealval] =useState(null)
+
+
+   async  function   getsinglemeal () {
+
+    let meal = await fetch("https://www.themealdb.com/images/media/meals/xqrwyr1511133646.jpg")
+    
+    console.log(meal.url);   
+
+
+   }
+
+
+   useEffect(() => {
+    getsinglemeal()
+   } ,[])
+
+
+
+
  
   return (
-<div className=" pt-[200px] " >
+<div className=" search  pt-[200px] " >
     
         <div className=" p-2 flex gap-5 "> 
 

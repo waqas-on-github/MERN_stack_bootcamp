@@ -7,7 +7,7 @@ import Shimmer from './Shimmer';
 
 
 function Showmeal(props) {
-  console.log(props)
+
    const meal =props?.meal?.meals;
     if(props.err){
 
@@ -31,7 +31,7 @@ function Showmeal(props) {
 
 
  return (
-    <div className='flex items-center justify-center gap-10 flex-wrap  w-[80%]'> 
+    <div className=' meal flex items-center justify-center gap-10 flex-wrap  w-[100%]'> 
     
      {meal?.map((card) => {
       return(
