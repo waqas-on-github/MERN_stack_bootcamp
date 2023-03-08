@@ -11,14 +11,14 @@ constructor(props){
 }
 
 
- async componentDidMount() {
-    console.log('child1 component didmount called ');
-
-   let data = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-       data = await data.json()
-        this.setState(data)
+async componentDidMount() {
+    
+    let data = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    data = await data.json()
+    this.setState(data)
     console.log(data)
- }
+    console.log('child1 component didmount called ');
+}
 
 
  componentDidUpdate() {

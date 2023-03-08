@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import Child1 from './Child1'
-import Child2 from './Child2'
+// import Child2 from './Child2'
 
 
 class Mycomponent extends React.Component{
@@ -75,7 +75,7 @@ class Mycomponent extends React.Component{
     <h1> im class Component</h1>
 
        <Child1/>
-       <Child2/>
+       {/* <Child2/> */}
 
     </React.Fragment>
     
