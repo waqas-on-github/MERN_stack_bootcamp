@@ -1,6 +1,8 @@
 
 
+import Accordion from './Accoridian'
 import './App.css'
+import Test from './Test'
 import useFeth from './useFetch'
 import useOnlie from './useOnline'
 
@@ -16,6 +18,8 @@ function App() {
          
         <h1>{data?.id}</h1>
         <h1>{data?.title}</h1>
+
+<Accordion/>
     </div>
   )
 }
