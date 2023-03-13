@@ -1,0 +1,26 @@
+.characterlimit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.characterlimit button {
+    background-color: rgb(4, 179, 106);
+    border: none;
+    color: white;
+}
+
+
+button:focus{
+    border-color:white ;
+}
+
+button:disabled{
+    background-color: rgb(109, 109, 109);
+
+
+}

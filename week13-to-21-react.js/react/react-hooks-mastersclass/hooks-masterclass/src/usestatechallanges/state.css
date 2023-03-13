@@ -1,0 +1,14 @@
+.dark{
+    background-color: black;
+}
+
+
+.light{
+    background-color: rgb(146, 146, 146);
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
