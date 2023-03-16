@@ -7,6 +7,7 @@ import Usewait from './Customhookchalanges/Usewait'
 import Dispatch01 from './usedispatchchallanges/Reducer01'
 import Dispatch02 from './usedispatchchallanges/Reducer02'
 import Reducer03 from './usedispatchchallanges/Reducer03'
+import Reducerfetch from './usedispatchchallanges/Reducerfetch'
 import Characterlimit from './useeffectchallanges/Characterlimit'
 import Fetchpost from './useeffectchallanges/Fetchpost'
 import Lightdarkmode from './usestatechallanges/Lightdarkmode'
@@ -40,9 +41,10 @@ function App() {
             {/* useReducer hook  */}
 
              {/* <Dispatch01/> */}
-             {/* <Dispatch02/> */}
-
-             <Reducer03/>
+             {/* <Reducer03/> */}
+            {/* <Todox/> */}
+            <Reducerfetch/>
+             
              
 
 
