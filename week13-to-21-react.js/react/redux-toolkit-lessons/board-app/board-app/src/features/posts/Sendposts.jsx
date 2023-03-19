@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { setposts } from './postSlice'
 
+
 function Sendposts() {
 let dispatch=useDispatch()
 const [title,settitle] =useState('')
 
 const [discp ,setdiscp] = useState('')
-
 
 
   return (

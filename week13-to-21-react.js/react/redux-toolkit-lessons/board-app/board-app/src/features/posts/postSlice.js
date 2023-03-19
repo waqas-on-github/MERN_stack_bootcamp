@@ -2,8 +2,8 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 
 const initialState=[
-    {id:Math.random() ,title :"learning rtk " ,content :'learning rtk in best way '},
-    {id:Math.random(),title :"learning rtk with dave" ,content :'learning rtk in best possible way '}
+    {id:nanoid() ,title :"learning rtk " ,content :'learning rtk in best way '},
+    {id:nanoid(),title :"learning rtk with dave" ,content :'learning rtk in best possible way '}
 
 ]
 
@@ -21,15 +21,13 @@ let postSlice =createSlice({
             payload: {
                 id: nanoid(),
                 title,
-                content
-
-     }}}}
+                content}
+              }
+                            }
+                }
      
      
-     
-
-
-    }
+             }
 })
 
 

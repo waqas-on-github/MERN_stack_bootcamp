@@ -1,11 +1,14 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectposts } from './postSlice'
+import  { selectAllusers } from './users/userslice';
 
 function Posts() {
-let posts =useSelector(selectposts)
 
-
+  let users =useSelector(selectAllusers)
+  let posts = useSelector(selectposts)
+  let state =useSelector((state) => state) 
+  console.log(state);
 
 
   return (

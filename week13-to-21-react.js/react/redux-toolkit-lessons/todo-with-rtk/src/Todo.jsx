@@ -7,7 +7,7 @@ import { captuevalue ,addvalue ,removeitem ,inputempty,editable} from './rtk/Tod
 function Todo() {
 
   let dispatch= useDispatch()
-  let mystate =useSelector((state) => state)
+
 
 
 
