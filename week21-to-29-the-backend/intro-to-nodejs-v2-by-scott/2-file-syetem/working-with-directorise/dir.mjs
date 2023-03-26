@@ -2,8 +2,6 @@ import * as fs from 'fs/promises'
 //  create direcorty 
  try{
      await fs.mkdir('./helloxs' )
- 
-
      console.log("dir created sucessfuly (:");
 
  }
@@ -33,3 +31,7 @@ try{
 catch(err) {
     console.log(err);
 }
+
+
+console.log(__dirname );
+console.log(__filename);
