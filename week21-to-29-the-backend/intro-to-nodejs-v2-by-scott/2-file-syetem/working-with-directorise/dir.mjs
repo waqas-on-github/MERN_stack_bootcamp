@@ -1,7 +1,7 @@
 import * as fs from 'fs/promises'
 //  create direcorty 
  try{
-     await fs.mkdir('./helloxs' )
+     await fs.mkdir('../../../learn-and-understand-node-js-by-anthony-alica' )
      console.log("dir created sucessfuly (:");
 
  }
