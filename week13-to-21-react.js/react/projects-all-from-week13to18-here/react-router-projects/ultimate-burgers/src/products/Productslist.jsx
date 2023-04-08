@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
 import { useProducts } from '../utils/useProducts'
+import Product from './Product'
 
 function Productslist() {
 
@@ -21,9 +22,7 @@ return (
     
         {products.map((item ) => {
             return(
-                <div key={item.id} > 
-                     <p>{item.name}</p>
-                </div>
+                <Product  product={item} key={item.id} /> 
             )
         })}        
         
