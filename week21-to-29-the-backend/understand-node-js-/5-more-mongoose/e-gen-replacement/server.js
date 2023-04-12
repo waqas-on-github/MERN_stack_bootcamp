@@ -33,7 +33,9 @@ app.use(
 // mount imported routes
 app.use('/', indexRouter)
 app.use('/users', usersRouter)
-app.use('/todo' , todoRouter)
+app.use('/todos' , todoRouter)
+
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

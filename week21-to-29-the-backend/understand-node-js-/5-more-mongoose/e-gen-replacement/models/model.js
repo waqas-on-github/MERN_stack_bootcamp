@@ -5,8 +5,8 @@ import mongoose from "mongoose";
 const todoschema =  new mongoose.Schema(
     {
         text:String, 
-        done:Boolean,
-        _id:Number
+        done:Boolean
+        
     }
 )
 
