@@ -7,8 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    hello 
+    <% todo.forEach((todo) => { %>
 
+
+        <li>
+
+         <a href="/todos/<%= todo._id %>"><%=todo.text%>  </a>
+        </li>
+
+        <% })%>
+     
     <a href="/todos/show">add todo</a>
 </body>
 </html>

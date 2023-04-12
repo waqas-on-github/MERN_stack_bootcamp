@@ -4,7 +4,6 @@ import { todos } from "../models/model.js";
 function show (req ,res){
    todos.find({})
    .then (todo => {
-   
      res.render('showtodo' , {
       todo :todo  
      })
@@ -43,6 +42,12 @@ function createtodo (req ,res) {
 
 } 
 
+
+function showbyid (req, res ) {
+  console.log(req.params);
+} 
+
+
 export {
-    show ,addtodo ,createtodo,alltodos
+    show ,addtodo ,createtodo,alltodos ,showbyid
 }
