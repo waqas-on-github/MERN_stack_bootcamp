@@ -19,7 +19,7 @@ const app = express()
 
 // view engine setup
 app.set('view engine', 'ejs')
-
+console.log(process.env.name)
 // basic middleware
 app.use(logger('dev'))
 app.use(express.json())

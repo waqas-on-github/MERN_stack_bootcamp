@@ -5,8 +5,8 @@ import './config/db.js'
 let app =express()
 
 
-app.listen(3000 ,() => {
-    console.log(`port is listinig at ${3000}`);
+app.listen(3001 ,() => {
+    console.log(`port is listinig at ${3001}`);
 })
 
 
