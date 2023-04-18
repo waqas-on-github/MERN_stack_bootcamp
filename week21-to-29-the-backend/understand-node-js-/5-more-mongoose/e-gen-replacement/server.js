@@ -6,7 +6,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import createError from 'http-errors'
 import logger from 'morgan'
-
+import  MethodOverride  from 'method-override'
 
 
 // import routers
@@ -19,7 +19,6 @@ const app = express()
 
 // view engine setup
 app.set('view engine', 'ejs')
-console.log(process.env.name)
 // basic middleware
 app.use(logger('dev'))
 app.use(express.json())
@@ -29,7 +28,7 @@ app.use(
     path.join(path.dirname(fileURLToPath(import.meta.url)), 'public')
   )
 )
-
+app.use(MethodOverride('_method'))
 // mount imported routes
 app.use('/', indexRouter)
 app.use('/users', usersRouter)

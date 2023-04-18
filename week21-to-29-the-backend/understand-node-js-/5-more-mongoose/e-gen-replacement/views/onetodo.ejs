@@ -7,12 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/todos" method="POST">
-    <input type="text" placeholder="add todo" name ="text">
-    <button type="submit"> save todo</button>
-    </form>
-
-
-    <a   href="/todos/alltodos"> show all todos</a>
-</body> 
+    <h1>todo data </h1>
+    <h2> <%= todo.text %></h2>
+    <button>isdone : <%= todo.done %></button>
+    
+</body>
 </html>

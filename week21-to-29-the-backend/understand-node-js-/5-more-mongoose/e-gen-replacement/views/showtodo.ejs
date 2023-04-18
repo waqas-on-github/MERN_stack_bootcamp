@@ -14,7 +14,12 @@
 
          <a href="/todos/<%= todo._id %>"><%=todo.text%>  </a>
         </li>
+         
+        <form action="/todos/<%= todo._id %>?_method=DELETE" method="POST">
 
+        <button type="submit">x</button>
+
+        </form>
         <% })%>
      
     <a href="/todos/show">add todo</a>
