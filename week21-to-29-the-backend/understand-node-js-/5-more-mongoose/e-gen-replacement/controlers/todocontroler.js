@@ -70,6 +70,25 @@ console.log(req.params.id)
 }
 
 
-export {
-    show ,addtodo ,createtodo,alltodos ,showbyid ,deletebyid
+function edit(req,res) {
+  todos.findById(req.params.id)
+  .then((todo) => {
+    console.log(todo);
+    res.render('editform',{
+      todo : todo
+    })
+  })
 }
+
+
+function update (req,res) {
+  todos.findByIdAndUpdate(req.params.id ,req.body,{new:true})
+  .then((todo) => {
+   res.redirect(`/todos/${todo.id}`)
+  })
+}
+
+export {
+    show ,addtodo ,createtodo,alltodos ,showbyid ,deletebyid ,edit,update 
+}
+

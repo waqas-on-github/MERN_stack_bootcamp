@@ -7,18 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <% todo.forEach((todo) => { %>
 
 
-        <li>
-
-         <a href="/todos/<%= todo._id %>"><%=todo.text%>  </a>
-        </li>
+        <li><a href="/todos/<%= todo._id %>"><%=todo.text%>  </a></li>
          
         <form action="/todos/<%= todo._id %>?_method=DELETE" method="POST">
 
         <button type="submit">x</button>
-
+           
         </form>
         <% })%>
      
