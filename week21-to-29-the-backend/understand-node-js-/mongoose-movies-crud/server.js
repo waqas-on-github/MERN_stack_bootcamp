@@ -17,12 +17,7 @@ const app = express()
 
 // view engine setup
 app.set('view engine', 'ejs')
-// my custom middleware 
-app.use((req,res ,next)=> {
-  req.time = new Date().toLocaleTimeString()
-  console.log('my custom middware ');
-  next()
-})
+
 // basic middleware
 app.use(logger('dev'))
 app.use(express.json())

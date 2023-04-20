@@ -4,7 +4,7 @@ const moviesechema = new mongoose.Schema({
     title:String, 
     releasedyear: Number,
     mpaaRating: String,
-    cats : [String],
+    cast: [String],
     nowShowing :Boolean
 } ,{
     timestamps:true 

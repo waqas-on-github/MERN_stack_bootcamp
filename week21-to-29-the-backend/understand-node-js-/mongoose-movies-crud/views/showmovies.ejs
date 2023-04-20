@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <%- include('partials/header') %>
+     </header>
+    <main style="display: flex ; justify-content: center ;">
+        <div style="display: flex ; justify-content: center ; flex-direction: column; gap: 50px;">
+        <% movie.forEach((movie) => { %>
+
+            
+          <div style="display: flex ; justify-content: center ;  align-items: center ; gap: 100px; border: 1px solid red ; ">
+            
+              <h3>name :  <%=movie.title%></h3> 
+              <h3>released year : <%=movie.releasedyear %> </h3>
+              <h3>MPAA Rating : <%=movie.mpaaRating %></h3>
+               <a href="/movies/<%= movie._id %>/details"> details </a>
+               <h2><button>X</button></h2>
+            </div>
+
+            <% })%>
+        </div>
+    </main>
+
+
+</body>
+</html>
