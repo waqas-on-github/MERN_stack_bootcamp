@@ -21,7 +21,11 @@
               <h3>released year : <%=movie.releasedyear %> </h3>
               <h3>MPAA Rating : <%=movie.mpaaRating %></h3>
                <a href="/movies/<%= movie._id %>/details"> details </a>
-               <h2><button>X</button></h2>
+               
+               <form  action="/movies/<%=movie._id%>/delete/?_method=DELETE" method="POST" >
+                    <button type="submit" > X </button>
+
+               </form>
             </div>
 
             <% })%>

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body  >
+  <header>
+    <%- include('partials/header') %>
+  </header>
+
+
+ <form style="display: flex ; justify-content: center; flex-direction: column; align-items: center;" action="/movies/<%=movie._id%>/edit/?_method=PUT" method="POST" >
+
+ <label for="title-input"> Title: </label>
+ <input type="text" name="title" value="<%= movie.title%>" >
+ <label  for="release-year-input"> Release Year : </label>
+ <input value="<%= movie.releasedyear%>" type="text" name="releasedyear">
+ <label for="mpaarating"> MPAA Rating: </label>
+
+ <select name="mpaaRating"   id="">
+   <option value="G">G</option>
+   <option value="PG"> PG</option>
+   <option value="PG13"> PG13</option>
+   <option value="R">R</option>
+ </select>
+
+ <label for="cast "> Cats (seorate actors ) : </label>
+ <input value="<%=movie.cast%>" type="text" name="cast" >
+ <label for="checkbox" >is showing </label>
+ <input  type="checkbox" name ='nowshowing'  checked>
+ <button type="submit">update </button>
+ 
+ </form>
+</body>
+</html>

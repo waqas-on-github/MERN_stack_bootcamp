@@ -2,10 +2,12 @@ import mongoose from "mongoose";
 
 const moviesechema = new mongoose.Schema({
     title:String, 
-    releasedyear: Number,
-    mpaaRating: String,
+    releasedyear: {type: Number, default: function () {
+        return new Date().getFullYear()
+    } , min:1927},
+    mpaaRating:{type : String , enum :['G' , 'PG' , 'PG-13' , 'R']},
     cast: [String],
-    nowShowing :Boolean
+    nowShowing :{type: Boolean ,default: false}
 } ,{
     timestamps:true 
 })

@@ -18,11 +18,11 @@ function create (req,res ) {
     Movie.create(req.body)
     .then((movie) => {
       
-        res.redirect('/movies/new')
+        res.redirect('/movies/show')
     })
     .catch((err) => {
         console.log(err);
-        res.redirect('/movies/new')
+        res.redirect('/movies/show')
 
     })
 }
@@ -57,9 +57,45 @@ function details (req,res ) {
 
 }
 
+
+  function deletemovie (req,res) {
+    Movie.findByIdAndDelete(req.params.id)
+    .then((movie) => {
+        res.redirect('/movies/show')
+    })
+    .catch((err)=> {
+        console.log(err);
+    })
+  }
+
+
+ function editpage (req, res ) {
+    Movie.findById(req.params.id) 
+    .then ((movie ) => {
+        res.render('editpage' , {
+            movie : movie 
+        })
+    })
+ }
+
+const upadtepage =(req, res ) => {
+ Movie.findByIdAndUpdate(req.params.id , req.body , {new : true})
+ .then((movie) => {
+    res.redirect(`/movies/${movie._id}/edit`)
+ }).
+ catch((err) => {
+    res.redirect("/movies/show")
+ })
+
+}
+
+
 export {
     shownew as new ,
     create,
     show,
-    details
+    details,
+    deletemovie,
+    editpage
+    ,upadtepage
 }

@@ -7,20 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+
     <header>
         <%- include('partials/header') %>
-     </header>
+    </header>
 
     <main>
-        <h1>movie Details </h1>
-        <h3>name :  </h3> <p><%=movie.title%></p>
-        <h3>released year :  </h3> <p><%=movie.releasedyear %></p>
-        <h3>MPAA Rating : </h3> <p><%=movie.mpaaRating %></p>
+
+       <h1>movie Details </h1>
+       <div> <h3>name :  </h3> <p><%=movie.title%></p> </div>
+       <div>  <h3>released year :  </h3> <p><%=movie.releasedyear %></p> </div>
+       <div> <h3>MPAA Rating : </h3> <p><%=movie.mpaaRating %></p> </div>
+       <div > <%= movie.nowShowing%></div>
+       
         <% movie.cast.forEach((cast) => { %>
           <button><%= cast %></button>
-
             <% })%>
-    </main>
+      
+      <a href="/movies/<%= movie._id %>/edit">edit</a>
+
+     </main>
 
     
 </body>
