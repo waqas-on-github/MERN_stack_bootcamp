@@ -96,8 +96,6 @@ const upadtepage =(req, res ) => {
 
 }
 
-
-
 // addding review 
 function addReview (req,res) {
 console.log(req.params.id);
@@ -113,7 +111,12 @@ Movie.findById(req.params.id)
         res.redirect(`/movies/${movie._id}/edit`)
 
 
-  })
+  })  .catch((err) => {
+    console.log(err);
+    res.redirect(`/movies/show`)
+
+
+})
 })
 
 

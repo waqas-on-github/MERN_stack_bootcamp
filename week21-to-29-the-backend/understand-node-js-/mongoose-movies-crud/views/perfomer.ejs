@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/perfomer/add"   method="POST">
+    <label for="add perfomer"> Add perfomer</label>
+    <input type="text" name ='content' >
+      <button>add perfomer</button>
+    </form>
+
+  <select name="" id="">
+
+    <% perfomer.forEach(oneperfomer => { %>
+     
+      <option value='<%=oneperfomer.content[0]%>'> <%=oneperfomer.content[0]%> </option>
+    <% }) %>
+
+  </select>
+
+
+
+</body>
+</html>

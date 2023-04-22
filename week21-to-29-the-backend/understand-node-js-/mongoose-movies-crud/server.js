@@ -10,6 +10,7 @@ import  MethodOverride  from 'method-override'
 // import routers
 import { router as indexRouter } from './routes/index.js'
 import { router as usersRouter } from './routes/movies.js'
+import {router as perfomerrouter} from './routes/perfomerrouter.js'
 
 
 // create the express app
@@ -31,6 +32,7 @@ app
 // mount imported routes
 app.use('/', indexRouter)
 app.use('/movies', usersRouter)
+app.use('/perfomer' , perfomerrouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
