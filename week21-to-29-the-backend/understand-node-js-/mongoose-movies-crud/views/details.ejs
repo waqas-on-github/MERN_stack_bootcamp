@@ -22,7 +22,7 @@
        
        
         <% movie.cast.forEach((cast) => { %>
-                   <button><%= cast %></button>
+                   <button><%= cast.content %></button>
         <% })%>
 
         <a href="/movies/<%= movie._id %>/edit">edit</a>
@@ -41,7 +41,7 @@
        
          </select>
          <button type="submit" > add review </button>
-       </form>
+       </form> 
 
         <h1>Reviews </h1>
         <% movie.reviews.forEach((review) => { %>
@@ -54,5 +54,22 @@
     </main>
 
     
+<section>
+    <h1>add performers </h1>
+    <form action="/movies/<%=movie._id%>/performers"  method="POST" >
+        <select name="content"> 
+           <% artist.forEach(element => { %>
+             <option value="<%=element._id %>"><%= element.content%> </option>
+           <% }) %>
+      
+        </select>
+        <button type="submit"> add an artist </button>
+      </form>
+      
+
+</section>
+
+
+
 </body>
 </html>

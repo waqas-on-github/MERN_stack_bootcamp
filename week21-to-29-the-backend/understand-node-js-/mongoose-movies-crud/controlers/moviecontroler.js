@@ -1,4 +1,5 @@
 import { Movie } from "../model/movie.js";
+import { Perfomer } from "../model/perfomer.js";
 
 
 // show edit movie page 
@@ -22,6 +23,7 @@ function create (req,res ) {
     
     Movie.create(req.body)
     .then((movie) => {
+        
         res.redirect('/movies/show')
     })
     .catch((err) => {
@@ -36,7 +38,7 @@ function create (req,res ) {
 function show (req,res ) {
    Movie.find({})
    .then((movie) => {
-    console.log(movie);
+
     res.render('showmovies' ,{
         movie: movie
     })
@@ -51,16 +53,27 @@ function show (req,res ) {
 // find movie by id and show it into edit page 
 function details (req,res ) {
     Movie.findById(req.params.id)
+    .populate('cast')
     .then((movie) => {
+    Perfomer.find({_id: {$nin:movie.cast}})
+    .then(performes =>{
+        console.log(performes);
+    
         res.render('details',{
-            movie : movie
+            movie : movie,
+            artist : performes
         })
+    })
+
     }) 
     .catch((err) => {
         console.log(err);
     })
 
 }
+
+
+
 
 // on view page find movie by id and delete 
   function deletemovie (req,res) {
@@ -122,6 +135,31 @@ Movie.findById(req.params.id)
 
 }
 
+
+// in this controler im pushing id of cast to in uniuqe movie jus ids in to cast Array
+
+function adperformer   (req, res ) {
+    console.log(req.params.id);
+    Movie.findById(req.params.id)
+    .then((movie) => {
+        movie.cast.push(req.body.content)
+        movie.save()
+        .then(() => {
+            res.redirect(`/movies/${movie._id}/details`)
+        })
+    }).catch((err) => {
+        console.log(err);
+    })
+    console.log(req.body);
+}
+
+
+
+
+
+
+
+
 export {
     shownew as new ,
     create,
@@ -130,5 +168,6 @@ export {
     deletemovie,
     editpage,
     upadtepage,
-    addReview
+    addReview, 
+    adperformer
 }

@@ -13,12 +13,11 @@
       <button>add perfomer</button>
     </form>
 
-  <select name="" id="">
+  <select name="content" id="">
 
-    <% perfomer.forEach(oneperfomer => { %>
-     
-      <option value='<%=oneperfomer.content[0]%>'> <%=oneperfomer.content[0]%> </option>
-    <% }) %>
+   <% perfomer.forEach(element => { %>
+      <option value="<%=element.content%>"><%=element.content%></option>
+   <% }) %>
 
   </select>
 

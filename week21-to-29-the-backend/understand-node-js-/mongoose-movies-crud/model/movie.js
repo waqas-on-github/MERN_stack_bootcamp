@@ -1,4 +1,7 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
+
+
+
 
 const reviewsechema = new mongoose.Schema({
     content : String,
@@ -12,7 +15,7 @@ const moviesechema = new mongoose.Schema({
         return new Date().getFullYear()
     } , min:1927},
     mpaaRating:{type : String , enum :['G' , 'PG' , 'PG-13' , 'R']},
-    cast: [String],
+    cast: [{type: Schema.Types.ObjectId, ref: "Perfomer"}],
     nowShowing :{type: Boolean ,default: false},
     reviews :[reviewsechema]
 } ,{

@@ -2,8 +2,9 @@ import { Perfomer } from '../model/perfomer.js';
 
 function showPerfomer (req,res) {
     Perfomer.find({})
+
     .then((singelperfomer) => {
-       
+        console.log(singelperfomer);   
        res.render('perfomer' , {
         perfomer : singelperfomer
        })
@@ -12,11 +13,11 @@ function showPerfomer (req,res) {
 
 
 
+
+
 function addperfomer (req,res) {
     console.log(req.body);
-    if(req.body.content) {
-        req.body.content= req.body.content.split(',')
-    }
+   
     Perfomer.create(req.body)
     .then (() => {
         res.redirect('/perfomer/add')
