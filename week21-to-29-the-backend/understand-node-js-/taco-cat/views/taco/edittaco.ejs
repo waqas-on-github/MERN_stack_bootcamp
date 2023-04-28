@@ -1,0 +1,26 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<main>
+    
+
+<% if (user) { %>
+    <form action="/tacos/<%= taco._id%>?_method=PUT" method="POST"> 
+        <label for="add taco "> add taco </label>
+        <input  value="<%=taco.name%>" type="text" name ='name'>
+        <input type="checkbox" name="tasty" >
+       <button type="submit">EDIT</button>
+    </form>
+ <% } %>
+ <% if (!user) { %>
+    <h4>only users are allowed </h4>
+  
+ <% } %>
+ 
+ 
+ 
+
+
+</main>
+
+<%- include('../partials/footer') %>

@@ -8,6 +8,8 @@ router.get('/',    TacoCTRl.index )
 router.post ('/' ,   TacoCTRl.addtaco)
 router.get('/:id' , TacoCTRl.singletcao)
 router.delete('/:id' , TacoCTRl.deletetaco)
+router.put('/:id' , TacoCTRl.edittaco)
+router.get('/:id/edit' , TacoCTRl.editpage)
 
 
 

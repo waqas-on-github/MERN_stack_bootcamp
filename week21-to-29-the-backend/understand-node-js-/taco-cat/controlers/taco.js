@@ -15,9 +15,6 @@ function index (req, res ) {
     })
 }
 
-
-
-
 function addtaco (req, res )
  {
   if(req.body.tasty) {
@@ -42,7 +39,6 @@ if(req.user){
    
  }
 
-
  function singletcao (req, res) {
   console.log(req.params);
   Taco.findById(req.params.id) 
@@ -55,7 +51,6 @@ if(req.user){
   })
 } 
 
-
 function deletetaco (req, res ) {
   Taco.findByIdAndDelete(req.params.id) 
   .then((deletedtaco) => {
@@ -64,10 +59,35 @@ function deletetaco (req, res ) {
   })
 }
 
+const editpage  = (req, res ) => {
+Taco.findById(req.params.id)
+.then((taco) => {
+  console.log(taco);
+
+  res.render('taco/edittaco' , {
+    taco : taco
+  } )
+})
+
+}
+
+
+function edittaco (req, res) {
+  console.log (req.params.id)
+
+  Taco.findByIdAndUpdate(req.params.id , req.body , {set : true})
+  .then(() => {
+    res.redirect('/tacos')
+  })
+}
+
+
 export {
     index,
     addtaco,
     singletcao,
-    deletetaco
+    deletetaco,
+    editpage,
+    edittaco
    
 }
