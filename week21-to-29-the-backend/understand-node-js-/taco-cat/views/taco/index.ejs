@@ -1,0 +1,15 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+
+  <h1><%= title %> </h1>
+
+  <main>
+    <% tacos.forEach(taco => { %>
+      <li><%= taco.name %> </li>
+      
+    <% }) %>
+     
+  </main>
+  
+<%- include('../partials/footer') %>

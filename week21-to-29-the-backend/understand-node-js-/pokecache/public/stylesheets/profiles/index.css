@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after {
+    /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default but can be overridden as needed */
+    box-sizing: inherit;
+  }
+  
+  /* font-family: 'Londrina Solid', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Press Start 2P', cursive; */
+  
+  body {
+    background-color: #1a1a1a;
+    color: #f6f6f6;
+    /* Use a system font, if none are available use any found sans-sarif font */
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
+      'Helvetica Neue', sans-serif;
+    margin: 0;
+    height: 100vh;
+  }
+  
+  nav {
+    background-color: #f6f6f6;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-height: 60px;
+    /* font-family: 'Londrina Solid', cursive; */
+    font-family: 'Luckiest Guy', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-size: 2.5vh;
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+  }
+  
+  .right {
+    margin-left: auto;
+  }
+  
+  #app-logo {
+    width: 5vh;
+  }
+  
+  #nav-avatar {
+    border-radius: 50%;
+    width: 5vh;
+    margin-left: 5px;
+  }
+  
+  #nav-title {
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 4vh;
+  }
+  
+  nav > a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+  }
+  
+  #logout-btn, button {
+    font-size: 2.5vh;
+    font-family: 'Luckiest Guy', cursive;
+    border: none;
+    background-color: #f6f6f6;
+  }
+  
+  #avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #error-img {
+    width: 40vh;
+  }
+  
+  #landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #search-form {
+    margin-bottom: 30px;
+  }
+  
