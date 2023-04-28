@@ -62,7 +62,7 @@ app.use(passDataToView)
 // mount imported routes
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
-app.use('/taco' , tacoRouter)
+app.use('/tacos' , tacoRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

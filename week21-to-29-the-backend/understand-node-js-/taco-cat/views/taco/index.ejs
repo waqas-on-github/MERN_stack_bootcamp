@@ -3,13 +3,52 @@
 
 
   <h1><%= title %> </h1>
-
   <main>
+
+
+  
     <% tacos.forEach(taco => { %>
-      <li><%= taco.name %> </li>
+    <div style="display: flex ; align-items: center ;gap:20px;">
+     <a href="/tacos/<%= taco._id%>"> <%= taco.name %></a> <p> is <%=  taco.tasty ? "tasty" : "not tasty" %></p>
+
+     <% if (user) { %>
       
-    <% }) %>
-     
+      <form action="/tacos/<%= taco._id%>?_method=DELETE" method="POST"> 
+         <button type="submit" >DELETE</button>
+ 
+      </form>
+     <% } %>
+
+
+     <% if (!user) { %>
+      <button disabled type="submit" >DELETE</button>
+     <% } %>
+    </div>
+  
+    <% }) %>     
+
   </main>
+
+
+  <% if (user) { %>
+
+    <form action="/tacos"  method="POST">
+        <label for="add taco "> add taco </label>
+        <input type="text" name ='name'>
+        <input type="checkbox" name="tasty" >
+        <button type="submit">add taco </button>
+      </form>
+
+  <% } else { %>
+
+    <form action="/tacos"  method="POST">
+    <label for="add taco "> add taco </label>
+    <input type="text" name ='name'>
+    <input type="checkbox" name="tasty" >
+    <button  disabled type="submit">add taco </button>
+    </form>
+
+ <% } %> 
+
   
 <%- include('../partials/footer') %>
