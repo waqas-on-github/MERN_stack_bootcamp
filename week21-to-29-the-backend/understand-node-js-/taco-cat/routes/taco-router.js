@@ -10,7 +10,7 @@ router.get('/:id' , TacoCTRl.singletcao)
 router.delete('/:id' , TacoCTRl.deletetaco)
 router.put('/:id' , TacoCTRl.edittaco)
 router.get('/:id/edit' , TacoCTRl.editpage)
-
+router.patch('/:id' ,  isLoggedIn ,  TacoCTRl.maketacotasty)
 
 
 

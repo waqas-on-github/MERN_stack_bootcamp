@@ -30,6 +30,9 @@ if(req.user){
     .then((taco) => {
         console.log(taco);
         res.redirect('/tacos')
+    }).catch((err) => {
+      console.log(err);
+      res.redirect('/tacos')
     })
   }
   else{
@@ -48,6 +51,9 @@ if(req.user){
    res.render('taco/singletaco',{
     taco : taco
    })
+  }).catch((err) => {
+    console.log(err);
+    res.redirect('/tacos')
   })
 } 
 
@@ -55,6 +61,10 @@ function deletetaco (req, res ) {
   Taco.findByIdAndDelete(req.params.id) 
   .then((deletedtaco) => {
     
+    res.redirect('/tacos')
+  })
+  .catch((err) => {
+    console.log(err);
     res.redirect('/tacos')
   })
 }
@@ -67,6 +77,10 @@ Taco.findById(req.params.id)
   res.render('taco/edittaco' , {
     taco : taco
   } )
+ 
+}) .catch((err) => {
+  console.log(err);
+  res.redirect('/tacos')
 })
 
 }
@@ -79,15 +93,33 @@ function edittaco (req, res) {
   .then(() => {
     res.redirect('/tacos')
   })
+  .catch((err) => {
+      console.log(err);
+      res.redirect('/tacos')
+    })
 }
 
 
+function maketacotasty (req, res) {
+  Taco.findById(req.params.id) 
+  .then((taco) => {
+    taco.tasty= !taco.tasty
+    taco.save() 
+    .then(() => {
+      res.redirect('/tacos')
+    })
+  })
+  
+}
+
 export {
+
     index,
     addtaco,
     singletcao,
     deletetaco,
     editpage,
-    edittaco
+    edittaco,
+    maketacotasty
    
 }

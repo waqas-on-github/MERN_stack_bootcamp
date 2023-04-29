@@ -22,6 +22,7 @@ import'./config/passport.js'
 import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
 import{router as tacoRouter } from './routes/taco-router.js'
+import { router as profilerouter } from './routes/profiles-router.js'
 
 // create the express app
 const app = express()
@@ -63,6 +64,7 @@ app.use(passDataToView)
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
 app.use('/tacos' , tacoRouter)
+app.use('/profiles' , profilerouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

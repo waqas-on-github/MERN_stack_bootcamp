@@ -5,6 +5,8 @@ const Schema = mongoose.Schema
 const profileSchema = new Schema({
   name: String,
   avatar: String,
+  tacos : [{type : Schema.Types.ObjectId, ref : "taco" }]
+  
 }, {
   timestamps: true
 })

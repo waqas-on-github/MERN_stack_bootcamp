@@ -25,6 +25,13 @@
 <% } %>
  <a href="/tacos/<%= taco._id %>/edit"> edit taco </a>
 
+ <% if (user) { %>
+   <form action="/tacos/<%= taco._id%>?_method=PATCH" method="POST"> 
+      
+      <button type="submit" ><%= taco.tasty ? 'make not tasty' : 'make tasty'  %></button>
+   </form>
+<% } %>
+
 </main>
 
 <%- include('../partials/footer') %>

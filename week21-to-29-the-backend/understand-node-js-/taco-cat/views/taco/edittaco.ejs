@@ -4,19 +4,18 @@
 <main>
     
 
-<% if (user) { %>
-    <form action="/tacos/<%= taco._id%>?_method=PUT" method="POST"> 
+<% if(taco.owner.equals(user?.profile._id)) { %>
+    <form action="/<%= taco._id%>?_method=PUT" method="POST"> 
         <label for="add taco "> add taco </label>
         <input  value="<%=taco.name%>" type="text" name ='name'>
         <input type="checkbox" name="tasty" >
        <button type="submit">EDIT</button>
     </form>
  <% } %>
- <% if (!user) { %>
-    <h4>only users are allowed </h4>
-  
- <% } %>
  
+ <% if (!(taco.owner.equals(user?.profile._id))) { %>
+  <h2>you are not owner of this taco </h2>
+ <% } %>
  
  
 
