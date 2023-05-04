@@ -23,7 +23,6 @@ router.put('/:id/edit' , MC.upadtepage)
 
 router.post('/:id/reviews' , MC.addReview)
 
-
 // add an cast 
 
 // movies/64458c2fcd1d08d202b91497/performers

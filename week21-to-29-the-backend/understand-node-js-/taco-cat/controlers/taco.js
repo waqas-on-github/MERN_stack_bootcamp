@@ -1,4 +1,5 @@
 import { Taco } from "../models/taco.js";
+import { Profile } from "../models/profile.js";
 
 
 function index (req, res ) {
@@ -26,15 +27,21 @@ if(req.user){
 
 
   if(req.user && req.body.name){
+
+    if(req.user.profile._id.equals(req.body.owner)){
+
+   
     Taco.create(req.body)
     .then((taco) => {
-        console.log(taco);
+     
+      
+     
         res.redirect('/tacos')
     }).catch((err) => {
       console.log(err);
       res.redirect('/tacos')
     })
-  }
+  }}
   else{
     res.render('taco/tacoerrors')
   }
@@ -43,11 +50,9 @@ if(req.user){
  }
 
  function singletcao (req, res) {
-  console.log(req.params);
   Taco.findById(req.params.id) 
   .populate('owner')
   .then((taco ) => {
-    console.log(taco);
    res.render('taco/singletaco',{
     taco : taco
    })
@@ -72,7 +77,7 @@ function deletetaco (req, res ) {
 const editpage  = (req, res ) => {
 Taco.findById(req.params.id)
 .then((taco) => {
-  console.log(taco);
+  
 
   res.render('taco/edittaco' , {
     taco : taco
@@ -87,7 +92,6 @@ Taco.findById(req.params.id)
 
 
 function edittaco (req, res) {
-  console.log (req.params.id)
 
   Taco.findByIdAndUpdate(req.params.id , req.body , {set : true})
   .then(() => {

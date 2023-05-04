@@ -136,7 +136,7 @@ Movie.findById(req.params.id)
 }
 
 
-// in this controler im pushing id of cast to in uniuqe movie jus ids in to cast Array
+// in this controler im pushing id of cast to in uniuqe movie just ids in to cast Array
 
 function adperformer   (req, res ) {
     console.log(req.params.id);
