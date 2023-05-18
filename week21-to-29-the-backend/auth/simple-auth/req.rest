@@ -1,0 +1,4 @@
+
+POST  localhost:3000/auth/signup 
+
+GET  http://localhost:3000/

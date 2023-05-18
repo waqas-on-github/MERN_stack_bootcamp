@@ -1,7 +1,18 @@
 import{ Tour }from '../models/tours.js'
+// import fs from 'node:fs/promises'
 
 
+// async function  loadtuoursdata() {
+//   const data = await  fs.readFile('./data/tours.json' , 'utf-8')
+//    Tour.create(JSON.parse(data))
+//    .then((data ) => {
+//     Tour.find((updata) => {
+//         console.log(updata);
+//     })
+//    })
+// } 
 
+// loadtuoursdata()
 
 
 function addtour (req, res ) {
@@ -21,7 +32,8 @@ function addtour (req, res ) {
 
 
 function getAlltours (req, res) {
-    Tour.find({})
+  
+    Tour.find(req.query)
     .then((tours) => {
         res.json({
             data: {
@@ -74,7 +86,6 @@ function updatetour (req, res ) {
     
 
 }
-
 
 
 export {

@@ -1,23 +1,22 @@
 // import npm packages
-
+import 'dotenv/config.js'
+import   './configs/db.js'
 import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import createError from 'http-errors'
 import logger from 'morgan'
-import  MethodOverride  from 'method-override'
+
 // import routers
 import { router as indexRouter } from './routes/index.js'
-import { router as usersRouter } from './routes/movies.js'
-import {router as perfomerrouter} from './routes/perfomerrouter.js'
-
+import { router as authRouter } from './routes/auth.js'
 
 // create the express app
 const app = express()
 
 // view engine setup
 app.set('view engine', 'ejs')
-app.use(MethodOverride('_method'))
+
 // basic middleware
 app.use(logger('dev'))
 app.use(express.json())
@@ -27,11 +26,10 @@ app.use(
     path.join(path.dirname(fileURLToPath(import.meta.url)), 'public')
   )
 )
-app
+
 // mount imported routes
 app.use('/', indexRouter)
-app.use('/movies', usersRouter)
-app.use('/perfomer' , perfomerrouter)
+app.use('/auth', authRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
