@@ -24,29 +24,33 @@ function getusers (req, res ) {
 }
 
 
-function login (req, res) {   
-   const {name , password  } = req.body  
-   User.findOne({name:name})
-
-   .then ((user) => {
-         console.log(user);
-      if(!user) {
-         res.redirect("/")
-                }
-      else {
-         console.log(user);
-         const token = jwt.sign( {user } , process.env.SECRET , {expiresIn :'24h'})
-         console.log(token);
-
+function login(req, res) {
+   const { name, password } = req.body;
+ 
+   User.findOne({ name: name })
+     .then((user) => {
+       if (!user) {
+         return res.status(404).send('User not found');
+       } else {
          user.comparepass(password)
-        .then((ismatched) => {
-         console.log(ismatched);
-     }) 
+           .then(() => {
+             const token = jwt.sign({ user_id: user.id }, process.env.SECRET, { expiresIn: '24h' });
+             return res.header('auth-token', token).send(token);
+           })
+           .catch((error) => {
+             return res.status(401).send('Invalid password');
+           });
+       }
+     })
+     .catch((error) => {
+       return res.status(500).send('Internal server error');
+     });
+ }
+ 
 
-            }
 
-    })   
-}
+
+
 
 export {
     signup,
