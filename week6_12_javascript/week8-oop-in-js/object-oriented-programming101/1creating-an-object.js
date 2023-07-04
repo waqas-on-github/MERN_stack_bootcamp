@@ -1,7 +1,7 @@
-// object oriented programming 
-// goal  the main goal is to put appropreate data and logic bundeld up to gather 
+//object-oriented programming 
+// goal  The main goal is to put appropriate data and logic bundled up to gather 
 
-// lets stsrt with simple example we wanna create character in game and and ites few action he can do 
+//let's start with a simple example we wanna create the character in-game and ites few actions he can do 
 
  const user1={
      name: "phile",
@@ -18,7 +18,7 @@
  
 
 
-// so whats happning here we encapsulated data and logic     
+// so whats happening here we encapsulated data and logic     
 //  but this approch has two main problem
 //  repatative (every time we need object we need to handcraft it )
 
@@ -60,7 +60,7 @@
 
 
 
-// now we have a another problem 
+//Now we have another problem 
   // we can not repeate our selfs again and again cuz its useless our programm will not be memory efficent 
 
 //   so we know  functions in js . their job is simply reusabilty of any logic so we can use function here also 
